@@ -56,6 +56,9 @@
     <script src="/bower_components/what-input/what-input.js"></script>
     <script src="/bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="/bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
+    <script src="/bower_components/lightgallery/dist/js/lg-thumbnail.min.js"></script>
+    <script src="/bower_components/lightgallery/dist/js/lg-fullscreen.min.js"></script>
+    <script src="/bower_components/lightgallery/dist/js/lg-zoom.min.js"></script>
     <script src="/bower_components/slick-carousel/slick/slick.js"></script>
     <!-- endbower -->
     {% include "./premium/premium-js.html" %}
