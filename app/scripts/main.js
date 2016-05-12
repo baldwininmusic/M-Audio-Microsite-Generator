@@ -1,4 +1,6 @@
 $(function() {
+  // INITIALIZE FOUNDATION
+  $(document).foundation();
 
   // NAV OVERLAY SCRIPTS
   $('#nav-overlay').hide();
@@ -64,71 +66,71 @@ $(function() {
 
   // GRID #1
   $('.grid-img-1').on('mouseenter', function(){
-    $('.grid-img-1 .overlay').fadeOut(500);
-    $('.grid-img-1 .grid-h4').fadeOut(500);
+    $('.grid-img-1 .overlay').stop().fadeOut(500);
+    $('.grid-img-1 .grid-h4').stop().fadeOut(500);
   }).on('mouseleave', function(){
-    $('.grid-img-1 .overlay').fadeIn(500);
-    $('.grid-img-1 .grid-h4').fadeIn(500);
+    $('.grid-img-1 .overlay').stop().fadeIn(500);
+    $('.grid-img-1 .grid-h4').stop().fadeIn(500);
   });
   // GRID #2
   $('.grid-img-2').on('mouseenter', function(){
-    $('.grid-img-2 .overlay').fadeOut(500);
-    $('.grid-img-2 .grid-h4').fadeOut(500);
+    $('.grid-img-2 .overlay').stop().fadeOut(500);
+    $('.grid-img-2 .grid-h4').stop().fadeOut(500);
   }).on('mouseleave', function(){
-    $('.grid-img-2 .overlay').fadeIn(500);
-    $('.grid-img-2 .grid-h4').fadeIn(500);
+    $('.grid-img-2 .overlay').stop().fadeIn(500);
+    $('.grid-img-2 .grid-h4').stop().fadeIn(500);
   });
   // GRID #3
   $('.grid-img-3').on('mouseenter', function(){
-    $('.grid-img-3 .overlay').fadeOut(500);
-    $('.grid-img-3 .grid-h4').fadeOut(500);
+    $('.grid-img-3 .overlay').stop().fadeOut(500);
+    $('.grid-img-3 .grid-h4').stop().fadeOut(500);
   }).on('mouseleave', function(){
-    $('.grid-img-3 .overlay').fadeIn(500);
-    $('.grid-img-3 .grid-h4').fadeIn(500);
+    $('.grid-img-3 .overlay').stop().fadeIn(500);
+    $('.grid-img-3 .grid-h4').stop().fadeIn(500);
   });
   // GRID #4
   $('.grid-img-4').on('mouseenter', function(){
-    $('.grid-img-4 .overlay').fadeOut(500);
-    $('.grid-img-4 .grid-h4').fadeOut(500);
+    $('.grid-img-4 .overlay').stop().fadeOut(500);
+    $('.grid-img-4 .grid-h4').stop().fadeOut(500);
   }).on('mouseleave', function(){
-    $('.grid-img-4 .overlay').fadeIn(500);
-    $('.grid-img-4 .grid-h4').fadeIn(500);
+    $('.grid-img-4 .overlay').stop().fadeIn(500);
+    $('.grid-img-4 .grid-h4').stop().fadeIn(500);
   });
   // GRID #5
   $('.grid-img-5').on('mouseenter', function(){
-    $('.grid-img-5 .overlay').fadeOut(500);
-    $('.grid-img-5 .grid-h4').fadeOut(500);
+    $('.grid-img-5 .overlay').stop().fadeOut(500);
+    $('.grid-img-5 .grid-h4').stop().fadeOut(500);
   }).on('mouseleave', function(){
-    $('.grid-img-5 .overlay').fadeIn(500);
-    $('.grid-img-5 .grid-h4').fadeIn(500);
+    $('.grid-img-5 .overlay').stop().fadeIn(500);
+    $('.grid-img-5 .grid-h4').stop().fadeIn(500);
   });
   // GRID #6
   $('.grid-img-6').on('mouseenter', function(){
-    $('.grid-img-6 .overlay').fadeOut(500);
-    $('.grid-img-6 .grid-h4').fadeOut(500);
+    $('.grid-img-6 .overlay').stop().fadeOut(500);
+    $('.grid-img-6 .grid-h4').stop().fadeOut(500);
   }).on('mouseleave', function(){
-    $('.grid-img-6 .overlay').fadeIn(500);
-    $('.grid-img-6 .grid-h4').fadeIn(500);
+    $('.grid-img-6 .overlay').stop().fadeIn(500);
+    $('.grid-img-6 .grid-h4').stop().fadeIn(500);
   });
   // GRID #7
   $('.grid-img-7').on('mouseenter', function(){
-    $('.grid-img-7 .overlay').fadeOut(500);
-    $('.grid-img-7 .grid-h4').fadeOut(500);
+    $('.grid-img-7 .overlay').stop().fadeOut(500);
+    $('.grid-img-7 .grid-h4').stop().fadeOut(500);
   }).on('mouseleave', function(){
-    $('.grid-img-7 .overlay').fadeIn(500);
-    $('.grid-img-7 .grid-h4').fadeIn(500);
+    $('.grid-img-7 .overlay').stop().fadeIn(500);
+    $('.grid-img-7 .grid-h4').stop().fadeIn(500);
   });
   // GRID #8
   $('.grid-img-8').on('mouseenter', function(){
-    $('.grid-img-8 .overlay').fadeOut(500);
-    $('.grid-img-8 .grid-h4').fadeOut(500);
+    $('.grid-img-8 .overlay').stop().fadeOut(500);
+    $('.grid-img-8 .grid-h4').stop().fadeOut(500);
   }).on('mouseleave', function(){
-    $('.grid-img-8 .overlay').fadeIn(500);
-    $('.grid-img-8 .grid-h4').fadeIn(500);
+    $('.grid-img-8 .overlay').stop().fadeIn(500);
+    $('.grid-img-8 .grid-h4').stop().fadeIn(500);
   });
 
 
-// PRODUCT PAGE
+// PRODUCT PAGE HERO CAROUSEL
   $('.product-carousel').slick({
       dots: true,
       infinite: true,
@@ -145,9 +147,51 @@ $(function() {
 
 // PRODUCT PAGE STICKY NAV LINKS SCRIPTS
 
+  // PREVENT LINK GOING TO TOP OF PAGE
+    $('.sticky-nav-link').click(function(e){
+      e.preventDefault();
+    });
+
+    $('#product-page-features').hide();
+    $('#product-page-requirements').hide();
+    $('#product-page-media').hide();
+    $('#comparison-chart').hide();
+    $('#product-page-downloads').hide();
+
+    $('#product-overview').on('click', function(){
+      $('.product-content-jquery').stop().fadeTo('slow',0).hide();
+      $('#product-page-overview').delay(300).stop().fadeTo('slow',1);
+    });
+
+    $('#product-features').on('click', function(){
+      $('.product-content-jquery').stop().fadeTo('slow',0).hide();
+      $('#product-page-features').stop().delay(300).fadeTo('slow',1);
+    });
+
+    $('#product-requirements').on('click', function(){
+      $('.product-content-jquery').stop().fadeTo('slow',0).hide();
+      $('#product-page-requirements').stop().delay(300).fadeTo('slow',1);
+    });
+
+    $('#product-media').on('click', function(){
+      $('.product-content-jquery').stop().fadeTo('slow',0).hide();
+      $('#product-page-media').delay(300).stop().fadeTo('slow',1);
+    });
+
+    $('#product-downloads').on('click', function(){
+      $('.product-content-jquery').stop().fadeTo('slow',0).hide();
+      $('#product-page-downloads').delay(300).stop().fadeTo('slow',1);
+    });
+
+
   //LIGHT GALLERY
     $('#lightgallery').lightGallery({
       mode: 'lg-fade'
     });
+
+  // DOWNLOADS ACCORDIANS
+    // $('.accordion-title').click(function(event) {
+    //   event.preventDefault();
+    // });
 
 }); // CLOSING OF $(function() {

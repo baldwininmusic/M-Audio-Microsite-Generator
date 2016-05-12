@@ -20,7 +20,9 @@
     .product-page-nav-container {
       display: flex;
       align-items: baseline;
-      border-bottom: 1px solid $m-audio-orange;
+      justify-content: center;
+      // border-bottom: 1px solid $m-audio-orange;
+      // border: 5px solid red;
 
       ul {
         margin-right: 20px;
