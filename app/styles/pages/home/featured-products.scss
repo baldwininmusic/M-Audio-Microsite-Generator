@@ -1,0 +1,64 @@
+/*****************************************************************************
+    FEATURED PRODUCTS    FEATURED PRODUCTS      FEATURED PRODUCTS
+******************************************************************************/
+
+  section#featured-products {
+    // height: auto;
+    margin-top: 5%;
+    /*background: #fff;*/
+    /*margin-top: 50px;*/
+    /*border: 5px solid red;*/
+
+    .columns {
+      padding: 0;
+    }
+  } /* section#featured-products */
+
+  .featured-products-header {
+    padding-left: 10px;
+    padding-top: 2%;
+    // font-weight: 100 !important;
+    text-transform: uppercase;
+    // font-size: 25px;
+    letter-spacing: 3px;
+    // border-top: 1px solid $m-audio-orange;
+    // border: 2px solid red;
+  }
+
+  .featured-products-div {
+    margin: 5px;
+  }
+
+  section#featured-products h1 {
+    margin-left: 110px;
+    font-weight: 100 !important;
+    text-transform: uppercase;
+    text-rendering: geometricPrecision;
+    font-size: 25px;
+    letter-spacing: 3px;
+    // border: 2px solid red;
+  }
+
+  section#featured-products p {
+    // color: #fff;
+    font-weight: 300;
+    // font-size: 15px;
+    line-height: 1.3em;
+  }
+
+  .featured-products {
+    margin: 0 80px;
+    /*border: 5px solid green;*/
+  }
+
+  .featured-products div {
+    margin: 0 10px;
+    /*border: 5px solid green;*/
+  }
+
+
+  .featured-products img {
+    width: 95%;
+    text-align: center;
+    /*border: 5px solid pink;*/
+  }

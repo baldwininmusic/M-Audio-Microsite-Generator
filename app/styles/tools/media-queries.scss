@@ -1,0 +1,69 @@
+// BREAKPOINT MEDIA QUERIES
+
+//MIN-WIDTH BREAKPOINTS
+  $small: 0;
+  $medium: 640px;
+  $large: 1024px;
+  $xlarge: 1200px;
+  $xxlarge: 1440px;
+  $xxxlarge: 1600px;
+  $widescreen: 1920px;
+// MIN-WIDTH to MAX-WIDTH BREAKPOINTS
+  $medium-screen: 641px 1024px;
+  $large-screen: 1025px 1440px;
+  $xlarge-screen: 1441px 1920px;
+
+
+
+/*==================
+ SMALL MEDIA QUERIES
+====================*/
+/* max-width 640px */
+
+@media only screen and (max-width: 40em) {
+
+}/* SMALL MEDIA QUERY */
+
+
+
+/*==================
+ MEDIUM MEDIA QUERIES
+====================*/
+/* min-width 641px and max-width 1024px */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+}/* MEDIUM MEDIA QUERY */
+
+
+
+/*==================
+ LARGE MEDIA QUERIES
+====================*/
+/* min-width 1025px and max-width 1440px */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+
+}/* LARGE MEDIA QUERY */
+
+
+
+/*===================
+ XLARGE MEDIA QUERIES
+=====================*/
+/* min-width 1441px and max-width 1920px */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+
+}/* XLARGE MEDIA QUERY */
+
+
+
+/*====================
+ XXLARGE MEDIA QUERIES
+======================*/
+/* min-width 1921px, xxlarge screens */
+
+@media only screen and (min-width: 120.063em) {
+
+}/* XXLARGE MEDIA QUERY */

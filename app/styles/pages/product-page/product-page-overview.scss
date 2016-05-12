@@ -1,0 +1,38 @@
+/***********************************************
+  PRODUCT PAGE OVERVIEW    PRODUCT PAGE OVERVIEW
+************************************************/
+
+  .product-page-overview-divider-line {
+    z-index: -1;
+    height: 1px;
+    width: 100%;
+    // margin: 2% 0;
+    position: absolute;
+    top: 50%;
+  }
+
+  section#product-page-overview {
+    padding-top: 5%;
+
+    h4 {
+      font-family: $font-pn-light;
+    }
+
+    .product-page-overview-section-header {
+      text-align: center;
+      position: relative;
+      // border: 2px solid purple;
+
+      h4 {
+        z-index: 99;
+        width: 15%;
+        margin: 0 auto;
+        background: #fff;
+        // border: 2px solid green;
+      }
+    }
+
+    .product-page-overview-container {
+      padding: 5%;
+    }
+  } /* section#product-page-overview */

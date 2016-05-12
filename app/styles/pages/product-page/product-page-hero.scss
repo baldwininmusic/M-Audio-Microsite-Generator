@@ -1,0 +1,57 @@
+/***********************************************
+  PRODUCT PAGE HERO    PRODUCT PAGE HERO
+************************************************/
+
+  section#product-page-hero {
+
+    .product-page-hero-container {
+      margin-top: 80px;
+      // width: 50%;
+      // border: 5px solid green;
+    }
+
+    .product-carousel {
+      // border: 5px solid green;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .product-page-hero-text-wrapper {
+      margin-top: 15%;
+      // border: 5px solid red;
+
+      .product-page-name-header {
+        // border: 5px solid blue;
+      } /* product-page-name-header */
+
+      .product-page-name-sub-header {
+        // border: 5px solid pink;
+      } /* product-page-name-sub-header */
+
+      .product-page-name-hero-copy {
+        width: 80%;
+        // border: 5px solid gold;
+      } /* product-page-name-hero-copy */
+
+      .product-buy-now-btn,
+      .product-find-a-dealer-btn {
+        border: 1px solid #444;
+        margin-right: 15px;
+        padding: 1% 2%;
+        width: 20%;
+        text-align: center;
+        display: inline-block;
+        transition: all 0.3s;
+
+        &:hover {
+          transition: all 0.3s;
+          color: darken($m-audio-slate, 20%);
+          border: 1px solid $m-audio-orange;
+        }
+      }
+
+    } /* product-page-hero-text-wrapper */
+
+  } /* section#product-page-hero */

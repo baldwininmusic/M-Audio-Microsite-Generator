@@ -1,0 +1,38 @@
+/***********************************************
+  PRODUCT PAGE NAV    PRODUCT PAGE NAV
+************************************************/
+
+  nav#product-page-nav {
+    margin-top: 10%;
+
+    h4 {
+      margin: 0;
+      font-family: $font-pn-thin;
+      padding-left: 20px;
+      flex-grow: 2;
+    }
+
+    .sticky-nav-link:focus,
+    .sticky-nav-link:hover {
+      color: $m-audio-slate;
+    }
+
+    .product-page-nav-container {
+      display: flex;
+      align-items: baseline;
+      border-bottom: 1px solid $m-audio-orange;
+
+      ul {
+        margin-right: 20px;
+        list-style: none;
+        // border: 5px solid red;
+
+        li {
+          margin-right: 10px;
+          font-family: $font-pn-light;
+          display: inline-block;
+        }
+      }
+    } /* product-page-nav-container */
+
+  } /* nav#product-page */

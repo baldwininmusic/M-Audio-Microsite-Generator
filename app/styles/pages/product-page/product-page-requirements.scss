@@ -1,0 +1,47 @@
+/***********************************************
+  PRODUCT PAGE REQUIREMENTS    PRODUCT PAGE REQUIREMENTS
+************************************************/
+
+  .product-page-requirements-divider-line {
+    z-index: -1;
+    height: 1px;
+    width: 100%;
+    // margin: 2% 0;
+    position: absolute;
+    top: 50%;
+  }
+
+  section#product-page-requirements {
+
+    h4 {
+      font-family: $font-pn-light;
+    }
+
+    .product-page-requirements-section-header {
+      // padding: 2% 0;
+      text-align: center;
+      position: relative;
+      // border: 2px solid purple;
+
+      h4 {
+        z-index: 99;
+        width: 15%;
+        margin: 0 auto;
+        background: #fff;
+        // border: 2px solid green;
+      }
+    }
+
+    .product-page-requirements-container {
+      padding: 5%;
+
+      ul {
+        list-style: none;
+      }
+
+      li {
+        padding: 1% 0;
+        border-bottom: 1px solid $m-audio-slate;
+      }
+    }
+  } /* section#product-page-requirements */

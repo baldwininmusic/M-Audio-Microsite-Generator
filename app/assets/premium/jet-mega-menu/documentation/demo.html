@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Jet - Responsive Megamenu</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		
+		<link href="css/jetmenu.css" rel="stylesheet">
+		<style>
+			body{
+				background: #fff;
+				margin: 0;
+				padding: 0;
+				font-family: 'Calibri', sans-serif;
+				font-size: 14px;
+			}
+			.content{
+				margin: 30px 100px;
+				display: block;
+			}
+			.panel{
+				position: absolute;
+				padding: 5px;
+				height: 20px;
+				width: 250px;
+				height: 64px;
+				left: 50%;
+				margin: 150px 0 0 -125px;
+				z-index: 1;
+			}
+			.panel a{
+				display: inline-block; 
+				width: 30px; 
+				margin: 0;
+				height: 30px; 
+				outline: none; 
+				background: #45484d;
+				border: solid 1px #333;
+			}
+			.panel a:nth-child(1){ background: #e0e0e0; }
+			.panel a:nth-child(2){ background: #111111; }
+			.panel a:nth-child(3){ background: #82837E; }
+			.panel a:nth-child(4){ background: #02b8fa; }
+			.panel a:nth-child(5){ background: #008C9E; }
+			.panel a:nth-child(6){ background: #88c425; }
+			.panel a:nth-child(7){ background: #2ecc71; }
+			.panel a:nth-child(8){ background: #C21A01; }
+			.panel a:nth-child(9){ background: #FA023C; }
+			.panel a:nth-child(10){ background: #ff670f; }
+			.panel a:nth-child(11){ background: #D46D22; }
+			.panel a:nth-child(12){ background: #febf01; }
+			.panel a:nth-child(13){ background: #a849a3; }
+			.panel a:nth-child(14){ background: #F56991; }
+			.jetmenu{
+				margin: 0 0 20px 0;
+				z-index: 99;
+			}
+
+		</style>
+		<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="js/jetmenu.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function(){  
+				$().jetmenu();
+			});
+		</script>
+	</head>
+	
+	<body>
+		
+		<div class="content">
+			<ul id="jetmenu" class="jetmenu blue">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Lists</a>
+					<div class="megamenu full-width">
+						<div class="row">
+							<div class="col1">
+								<ul>
+									<li class="title"><h5>Web development</h5></li>
+									<li><a href="#">Website design</a></li>
+									<li><a href="#">ECommerce</a></li>
+									<li><a href="#">Website Maintenance</a></li>
+									<li><a href="#">Web Enhancements</a></li>
+								</ul>
+							</div>
+							<div class="col1">
+								<ul>
+									<li class="title"><h5>Hosting</h5></li>
+									<li><a href="#">Website Hosting</a></li>
+									<li><a href="#">WordPress Hosting</a></li>
+									<li><a href="#">SharePoint Hosting</a></li>
+									<li><a href="#">VPS Hosting</a></li>
+								</ul>
+							</div>
+							<div class="col1">
+								<ul>
+									<li class="title"><h5>Design services</h5></li>
+									<li><a href="#">Graphics</a></li>
+									<li><a href="#">Vectors</a></li>
+									<li><a href="#">Business cards</a></li>
+									<li><a href="#">Custom logo</a></li>
+								</ul>
+							</div>
+							<div class="col1">
+								<ul>
+									<li class="title"><h5>Web Marketing</h5></li>
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Search Engine Marketing</a></li>
+									<li><a href="#">Email Marketing</a></li>
+									<li><a href="#">Optimization (SEO)</a></li>
+								</ul>
+							</div>
+							<div class="col1">
+								<ul>
+									<li class="title"><h5>Email services</h5></li>
+									<li><a href="#">Personal Email</a></li>
+									<li><a href="#">Business Email</a></li>
+									<li><a href="#">Mobile Email</a></li>
+									<li><a href="#">Microsoft Exchange</a></li>
+								</ul>
+							</div>
+							<div class="col1">
+								<ul>
+									<li class="title"><h5>Security services</h5></li>
+									<li><a href="#">SSL Certificates</a></li>
+									<li><a href="#">Site Seal</a></li>
+									<li><a href="#">Security and Performance</a></li>
+									<li><a href="#">Privacy Seal</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li><a href="http://www.google.com">Dropdowns</a>
+					<ul class="dropdown">
+						<li><a href="#">Website Design</a></li>
+						<li><a href="#">Hosting</a></li>
+						<li><a href="#">Design</a>
+							<ul class="dropdown">
+								<li><a href="#">Graphics</a></li>
+								<li><a href="#">Vectors</a></li>
+								<li><a href="#">Photoshop</a>
+									<ul class="dropdown">
+										<li><a href="#">Photo editing</a></li>
+										<li><a href="#">Business cards</a></li>
+										<li><a href="#">Websites</a></li>
+										<li><a href="#">Illustrations</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Fonts</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Consulting</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Half width</a>
+					<div style="text-align: justify" class="megamenu half-width">
+						<div class="row">
+							<div class="col2">
+								<img src="img/1.jpg" alt="image" />
+							</div>
+							<div class="col4">
+								Lorem ipsum dolor sit amet, consectetur meti facilisi a adipiscing elit. Amet
+								Curabitur nec lorem alty amet massalit fermentum massa eti. Nulla facilisi. 
+								Phasellus in rutrum felis, sed fringilla turpis. 
+								Etiam puris noiteki dignissim puruseli tempus, commodo neque eu. Dui curabitur cursus feugiat
+								ullamcorper a nibh nec, ost.
+							</div>
+						</div>
+						<div class="row">
+							<div class="col2">
+								<img src="img/2.jpg" alt="image" />
+							</div>
+							<div class="col4">
+								Aliquam erat volutpat. Nulla nec justo dui. Aeneanoi atet accumsan egestas tortor at lacinia. 
+								Pellentesque netus habitant morbi tristique senectus et netus etor egestasio malesuada fames ac turpis egestas. 
+								Utilo pellentesquetii laoreet leo eget pretium. Integeretus eleifend et mi at velo elementum. 
+								Maecenas vitaelo. 
+							</div>
+						</div>
+						<div class="row">
+							<div class="col2">
+								<img src="img/3.jpg" alt="image" />
+							</div>
+							<div class="col4">
+								Lorem ipsum dolor sit amet, consectetur meti facilisi a adipiscing elit. Amet
+								Curabitur nec lorem alty amet massalit fermentum massa eti. Nulla facilisi. 
+								Phasellus in rutrum felis, sed fringilla turpis. 
+								Etiam puris noiteki dignissim puruseli tempus, commodo neque eu. Dui curabitur cursus feugiat
+								ullamcorper a nibh nec, ost. 
+							</div>
+						</div>
+					</div>
+				</li>
+				<li><a href="#">Grid system</a>
+					<div class="megamenu full-width">
+						<div class="row">
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+						</div>
+						<div class="row">
+							<div style="background: #444; text-align: center" class="col2">2/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+						</div>
+						<div class="row">
+							<div style="background: #444; text-align: center" class="col3">3/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+						</div>
+						<div class="row">
+							<div style="background: #444; text-align: center" class="col4">4/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+						</div>
+						<div class="row">
+							<div style="background: #444; text-align: center" class="col5">5/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+						</div>
+						<div class="row">
+							<div style="background: #444; text-align: center" class="col6">6/6</div>
+						</div>
+						<div class="row">
+							<div style="background: #444; text-align: center" class="col3">3/6</div>
+							<div style="background: #444; text-align: center" class="col3">3/6</div>
+						</div>
+						<div class="row">
+							<div style="background: #444; text-align: center" class="col2">2/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+							<div style="background: #444; text-align: center" class="col2">2/6</div>
+						</div>
+						<div class="row">
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+							<div style="background: #444; text-align: center" class="col4">4/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+						</div>
+						<div class="row">
+							<div style="background: #444; text-align: center" class="col4">4/6</div>
+							<div style="background: #444; text-align: center" class="col2">2/6</div>
+						</div>
+						<div class="row">
+							<div style="background: #444; text-align: center" class="col2">2/6</div>
+							<div style="background: #444; text-align: center" class="col3">3/6</div>
+							<div style="background: #444; text-align: center" class="col1">1/6</div>
+						</div>
+					</div>
+				</li>				
+				<li class="right"><a href="#">Contact</a>
+					<div class="megamenu half-width">
+						<div class="row">
+							<div class="col3" style="text-align: justify">
+								<h4 style="margin: 0">Aliquam</h4>
+								<p>
+									Aliquam erat volutpat. Nulla nec justo dui. Aeneanoi atet accumsan egestas tortor at lacinia. 
+									Pellentesque netus habitant morbi tristique senectus et netus etor egestasio malesuada fames
+									ac turpis egestas.  
+								</p>
+								<h4 style="margin: 0">Lorem ipsum</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur meti facilisi a adipiscing elit. Amet
+									Curabitur nec lorem alty amet massalit fermentum massa eti. Nulla facilisi. 
+									Phasellus in rutrum felis. 
+								</p>
+							</div>
+							<div class="col3">
+								<form method="post">
+									<input type="text" name="name" placeholder="Name">
+									<input type="text" name="email" placeholder="Email">
+									<textarea name="message" rows="8" placeholder="Message"></textarea>
+									<input type="submit" value="Send">
+								</form>
+							</div>
+						</div>						
+					</div>
+				</li>
+				
+			</ul>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<div class="panel">
+				<a href="#" class="" title="default"></a>
+				<a href="#" class="black" title="black"></a>
+				<a href="#" class="grey" title="grey"></a>
+				<a href="#" class="blue" title="blue"></a>
+				<a href="#" class="deeper" title="deeper"></a>
+				<a href="#" class="green" title="green"></a>
+				<a href="#" class="emerald" title="emerald"></a>
+				<a href="#" class="red" title="red"></a>
+				<a href="#" class="pox" title="pox"></a>
+				<a href="#" class="orange" title="orange"></a>
+				<a href="#" class="sunburst" title="sunburst"></a>
+				<a href="#" class="yellow" title="yellow"></a>
+				<a href="#" class="purple" title="purple"></a>
+				<a href="#" class="pink" title="pink"></a>
+			</div>
+			
+			
+			<!-- do not use the code below, It's only for demo purposes -->
+			<!-- do not use the code below, It's only for demo purposes -->
+			<!-- do not use the code below, It's only for demo purposes -->
+			<script>
+				$(document).ready(function(){
+					$(".panel a").css("opacity", 0.3);
+					$(".panel a.blue").css("opacity", 1);
+					
+					$(".panel a").click(function(e){
+						$(".panel a").css("opacity", 0.3);
+						e.preventDefault();
+						var style = $(this).attr("class");
+						$(".jetmenu").removeAttr("class").addClass("jetmenu").addClass(style);
+						$(this).css("opacity", 1);
+					});
+				});
+			</script>
+
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,19 @@
+/************************************
+        FOOTER       FOOTER
+*************************************/
+  footer {
+    text-align: center;
+    // margin-top: 4%;
+    // height: 100vh;
+
+    .ion {
+      padding-top: 20px;
+      font-size: 2em;
+      padding-right: 10px;
+      color: $m-audio-orange;
+
+      &:hover {
+        color: #444;
+      }
+    }
+  }

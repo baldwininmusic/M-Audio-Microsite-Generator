@@ -1,0 +1,13 @@
+{% extends "layouts/default.nunjucks" %}
+
+{% block content %}
+
+  {% include "templates/_partials/navigation.html" %}
+  {% include "templates/_partials/nav-overlay.html" %}
+
+  {% include "templates/home/hero.html" %}
+  {% include "templates/home/featured-products.html" %}
+  {% include "templates/home/categories.html" %}
+
+  {% include "templates/_partials/footer.html" %}
+{% endblock %}

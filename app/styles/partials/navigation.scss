@@ -1,0 +1,63 @@
+/************************************
+   NAVIGATION       NAVIGATION
+*************************************/
+
+nav {
+
+  .nav-container {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background: rgba(255,255,255, 0.7);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid $m-audio-orange;
+    // border: 5px solid purple;
+  }
+
+  a {
+    color: #444;
+
+    &:hover,
+    &:focus {
+      color: $m-audio-slate;
+    }
+  }
+
+  .icon-arrows_hamburger2 {
+    color: $m-audio-orange;
+    font-size: 1.5em;
+    padding-left: 10px;
+  }
+
+  .m-audio-logo {
+    width: 15%;
+    margin-left: 15px;
+  }
+
+  .nav-links {
+    width: 100%;
+    text-align: right;
+    // border: 2px solid red;
+
+    ul {
+      margin: 0;
+      list-style: none;
+
+      li {
+        padding-right: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        display: inline-block;
+
+        &:hover {
+          border-bottom: 1px solid $m-audio-orange;
+        }
+      }
+    } /* ul */
+  }
+}
