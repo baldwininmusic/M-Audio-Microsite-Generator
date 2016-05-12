@@ -1,0 +1,44 @@
+/*
+|--------------------------------------------------------------------------
+|                                 ARTISTS
+|--------------------------------------------------------------------------
+*/
+
+  section#artists {
+    margin-top: 80px;
+    padding: 4% 0;
+
+    .columns {
+      padding: 0;
+    }
+
+    .artists-block-container {
+      position: relative;
+      // border: 5px solid blue;
+    }
+
+    .artists-name-text {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h5 {
+        color: #fff;
+        // font-size: 1.2rem;
+      }
+    }
+
+    .artists-hover-div {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(207, 75, 0, .5);
+      // border: 5px solid blue;
+    }
+
+  } /* section#artists */

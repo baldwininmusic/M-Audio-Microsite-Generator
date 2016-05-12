@@ -204,4 +204,43 @@ $(function() {
         cssEase: 'linear'
       });
 
+  // ARTISTS PAGE HOVER SCRIPTS
+    $('.artists-hover-div').hide();
+
+    $('.artist-1').on('mouseenter', function() {
+      $('.artist-1-hover').show();
+    }).on('mouseleave', function() {
+      $('.artists-hover-div').hide();
+    });
+
+    $('.artist-2').on('mouseenter', function() {
+      $('.artist-2-hover').show();
+    }).on('mouseleave', function() {
+      $('.artists-hover-div').hide();
+    });
+
+    $('.artist-3').on('mouseenter', function() {
+      $('.artist-3-hover').show();
+    }).on('mouseleave', function() {
+      $('.artists-hover-div').hide();
+    });
+
+    $('.artist-4').on('mouseenter', function() {
+      $('.artist-4-hover').show();
+    }).on('mouseleave', function() {
+      $('.artists-hover-div').hide();
+    });
+
+    $('.artist-5').on('mouseenter', function() {
+      $('.artist-5-hover').show();
+    }).on('mouseleave', function() {
+      $('.artists-hover-div').hide();
+    });
+
+    $('.artist-6').on('mouseenter', function() {
+      $('.artist-6-hover').show();
+    }).on('mouseleave', function() {
+      $('.artists-hover-div').hide();
+    });
+
 }); // CLOSING OF $(function() {
