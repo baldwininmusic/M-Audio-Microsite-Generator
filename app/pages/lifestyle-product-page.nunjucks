@@ -1,0 +1,18 @@
+{% extends "layouts/default.nunjucks" %}
+
+{% block content %}
+
+  {% include "templates/_partials/navigation.html" %}
+  {% include "templates/_partials/nav-overlay.html" %}
+
+  {% include "templates/lifestyle-product-page/lifestyle-hero.html" %}
+  {% include "templates/product-page/product-page-hero.html" %}
+  {% include "templates/product-page/_product-page-nav.html" %}
+  {% include "templates/product-page/product-page-overview.html" %}
+  {% include "templates/product-page/product-page-features.html" %}
+  {% include "templates/product-page/product-page-requirements.html" %}
+  {% include "templates/product-page/product-page-media.html" %}
+  {% include "templates/product-page/product-page-downloads.html" %}
+
+  {% include "templates/_partials/footer.html" %}
+{% endblock %}

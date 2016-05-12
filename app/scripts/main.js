@@ -189,9 +189,19 @@ $(function() {
       mode: 'lg-fade'
     });
 
-  // DOWNLOADS ACCORDIANS
-    // $('.accordion-title').click(function(event) {
-    //   event.preventDefault();
-    // });
+  // LIFESTYLE PRODUCT PAGES
+    $('.lifestyle-hero-image-container').slick({
+        dots: true,
+        infinite: true,
+        speed: 1500,
+        fade: true,
+        lazyLoad: 'ondemand',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        pauseOnHover: true,
+        cssEase: 'linear'
+      });
 
 }); // CLOSING OF $(function() {

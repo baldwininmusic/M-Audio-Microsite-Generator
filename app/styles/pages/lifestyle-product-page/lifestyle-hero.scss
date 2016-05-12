@@ -1,0 +1,51 @@
+/*
+|--------------------------------------------------------------------------
+|                                 LIFESTYLE HERO
+|--------------------------------------------------------------------------
+*/
+
+  section#lifestyle-hero {
+
+    .columns {
+      padding: 0;
+    }
+
+    .lifestyle-hero-image-container {
+      height: 70vh;
+      overflow: hidden;
+      // border: 5px solid red;
+    }
+
+    .lifestyle-hero-slides-wrapper {
+      position: relative;
+      // border: 5px solid red;
+    }
+
+    .lifestyle-hero-text-container {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      // border: 5px solid green;
+
+      h4, p {
+        color: #fff;
+        line-height: 60px;
+        display: inline-block;
+        font-weight: 700;
+        background: black;
+        font-size: 1.8rem;
+        padding: 0 10px;
+        // border: 5px solid coral;
+      }
+    }
+
+    .hero-copy-wrapper {
+      // border: 5px solid gold;
+    }
+
+  }
