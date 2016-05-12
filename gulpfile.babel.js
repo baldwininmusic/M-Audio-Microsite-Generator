@@ -124,13 +124,13 @@ gulp.task('html', ['views', 'styles', 'scripts'], () => {
 // Image Compression
 gulp.task('images', () => {
   return gulp.src('app/images/**/*')
-    .pipe($.cache($.imagemin({
-      progressive: true,
-      interlaced: true,
+    // .pipe($.cache($.imagemin({
+      // progressive: true,
+      // interlaced: true,
       // don't remove IDs from SVGs, they are often used
       // as hooks for embedding and styling
-      svgoPlugins: [{cleanupIDs: false}]
-    })))
+      // svgoPlugins: [{cleanupIDs: false}]
+    // })))
     .pipe(gulp.dest('dist/images'));
 });
 
