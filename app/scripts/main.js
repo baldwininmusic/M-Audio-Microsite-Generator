@@ -146,7 +146,7 @@ $(function() {
 // PRODUCT PAGE STICKY NAV LINKS SCRIPTS
 
   //LIGHT GALLERY
-    $("#lightgallery").lightGallery({
+    $('#lightgallery').lightGallery({
       mode: 'lg-fade'
     });
 

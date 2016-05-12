@@ -28,6 +28,10 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/src/Modernizr.js"></script>
     <!-- endbuild -->
+
+    <!-- ADOBE FONT KIT -->
+    <script src="https://use.typekit.net/swp5rja.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
     <!--[if lt IE 10]>

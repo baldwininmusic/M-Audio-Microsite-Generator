@@ -10,6 +10,12 @@ import {stream as wiredep} from 'wiredep';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
+// Move Home Page Slider to Dist Folder
+gulp.task('rev-slider', function() {
+  return gulp.src('app/m-audio-slider/**/*')
+    .pipe(gulp.dest('./dist/m-audio-slider'))
+});
+
 // Github Pages Deploy
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
@@ -233,7 +239,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app/layouts'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['rev-slider', 'lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
