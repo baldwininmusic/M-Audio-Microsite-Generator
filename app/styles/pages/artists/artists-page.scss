@@ -1,0 +1,30 @@
+/*
+|--------------------------------------------------------------------------
+|                                 ARTISTS PAGE
+|--------------------------------------------------------------------------
+*/
+
+  section#artists-page {
+    margin-top: 80px;
+
+    .columns {
+      padding: 0;
+    }
+
+    .artists-page-image-container {
+      // height: 400vh;
+      background: url('../images/artists/4.jpg');
+      background-repeat: no-repeat;
+      background-size: auto 100vh;
+      background-position: left;
+      background-attachment: fixed;
+      // border: 5px solid green;
+    }
+
+    .artists-page-copy-container {
+      // height: 400vh;
+      padding: 0 5%;
+      background: #F6F6F6;
+      // border: 5px solid red;
+    }
+  }
