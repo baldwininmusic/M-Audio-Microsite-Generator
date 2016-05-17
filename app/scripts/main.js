@@ -129,21 +129,6 @@ $(function() {
     $('.grid-img-8 .grid-h4').stop().fadeIn(500);
   });
 
-// SOCIAL MEDIA FEEDS
-  $('.social-feed-container').socialfeed({
-      // INSTAGRAM
-      instagram:{
-        accounts: ['@m_audio','#m_audio'],  //Array: Specify a list of accounts from which to pull posts
-        limit: 2,                                    //Integer: max number of posts to load
-        client_id: 'e0e8f250305a4a4fa02a2c9d5eb37647'       //String: Instagram client id (optional if using access token)
-        access_token: '' //String: Instagram access token
-      },
-
-      // GENERAL SETTINGS
-      length:400                                      //Integer: For posts with text longer than this length, show an ellipsis.
-    });
-
-
 // PRODUCT PAGE HERO CAROUSEL
   $('.product-carousel').slick({
       dots: true,
