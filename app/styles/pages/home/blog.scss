@@ -1,0 +1,85 @@
+/*
+|--------------------------------------------------------------------------
+|                                 BLOG - HOME PAGE
+|--------------------------------------------------------------------------
+*/
+
+  section#blog-home-page {
+    margin-top: 80px;
+    padding: 4% 0;
+    // height: 100vh;
+    background: url('../images/stock/3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  } /* section#blog-home-page */
+
+  .blog-post-left-1,
+  .blog-post-right-2,
+  .blog-post-left-2 {
+    margin-top: 50px;
+    // border: 5px solid gold;
+  }
+
+/*
+|--------------------------------------------------------------------------
+|                     BLOG RIGHT COLUMN
+|--------------------------------------------------------------------------
+*/
+
+    .blog-left-column-container {
+
+      .blog-label-card {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255,255,255,0.7);
+        outline: 5px solid #fff;
+        outline-offset: 10px;
+
+        h3 {
+          font-weight: 100;
+          color: #444;
+          text-transform: uppercase;
+        }
+      } /* blog-label-card */
+
+    } /* blog-left-column-container */
+
+
+/*
+|--------------------------------------------------------------------------
+|                     BLOG RIGHT COLUMN
+|--------------------------------------------------------------------------
+*/
+
+    .blog-right-column-container {
+
+    } /* blog-right-column-container */
+
+    .blog-post-container {
+
+    } /* blog-post-container */
+
+    .blog-post-copy-container {
+      padding: 2%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: rgba(255,255,255,.9);
+
+      span {
+        color: $m-audio-orange;
+      }
+
+      h4 {
+        font-weight: 100;
+        margin: 0;
+        padding-bottom: 10px;
+      }
+    } /* blog-post-copy-container */
+
+

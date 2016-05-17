@@ -7,10 +7,12 @@
 
   {% include "templates/home/hero.html" %}
   {% include "templates/home/featured-callouts.html" %}
-  {# include "templates/home/featured-products.html" #}
-  {% include "templates/home/featured-products-2.html" %}
-  {% include "templates/home/social-feed.html" %}
   {% include "templates/home/categories.html" %}
+  {# include "templates/home/featured-products.html" #}
+  {# include "templates/home/featured-products-2.html" #}
+  {# include "templates/home/blog.html" #}
+  {% include "templates/home/social-feed.html" %}
+
 
   {% include "templates/_partials/footer.html" %}
 {% endblock %}

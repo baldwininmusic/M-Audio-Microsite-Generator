@@ -4,7 +4,8 @@
   {% include "templates/_partials/navigation.html" %}
   {% include "templates/_partials/nav-overlay.html" %}
 
-  {% include "templates/artists/artists.html" %}
+  {# include "templates/artists/artists.html" #}
+  {% include "templates/home/blog.html" %}
 
   {% include "templates/_partials/footer.html" %}
 {% endblock %}
