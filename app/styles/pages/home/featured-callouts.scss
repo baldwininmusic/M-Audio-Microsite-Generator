@@ -19,14 +19,18 @@
     }
 
     .featured-callouts-copy-container {
-      padding: 2%;
+      // padding: 2%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
-      h3 {
+      h4 {
         margin: 0;
       }
 
       p {
-        padding: 1% 0;
+        padding: 2% 4%;
       }
     } /* .featured-callouts-copy-container */
 
