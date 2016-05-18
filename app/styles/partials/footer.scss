@@ -2,9 +2,13 @@
         FOOTER       FOOTER
 *************************************/
   footer {
-    text-align: center;
-    // margin-top: 4%;
-    // height: 100vh;
+    height: 300px;
+    background: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // border-top: 2px solid $m-audio-orange;
 
     .ion {
       padding-top: 20px;
@@ -16,4 +20,38 @@
         color: #444;
       }
     }
+  } /* footer */
+
+.footer-logo-wrapper {
+  text-align: center;
+  // border: 5px solid green;
+
+  svg {
+    fill: #444;
+    width: 200px;
   }
+}
+
+.footer-socials-wrapper {
+  text-align: center;
+  padding: 20px 0;
+  // border: 5px solid red;
+
+  ul {
+    margin: 0;
+  }
+
+  li, a {
+    display: inline-block;
+    color: $m-audio-orange;
+    padding-right: 5px;
+  }
+}
+
+.footer-copy-wrapper {
+  text-align: center;
+
+  span {
+    font-size: .8rem;
+  }
+}
