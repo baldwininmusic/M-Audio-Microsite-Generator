@@ -16,9 +16,6 @@
     <link rel="stylesheet" href="/bower_components/Ionicons/css/ionicons.css" />
     <link rel="stylesheet" href="/bower_components/lightgallery/dist/css/lightgallery.css" />
     <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
-    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css" />
-    <link rel="stylesheet" href="/bower_components/social-feed/css/jquery.socialfeed.css" />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <!-- endbower -->
     {% include "./premium/premium-css.html" %}
     <!-- endbuild -->
@@ -62,7 +59,6 @@
     <script src="/bower_components/doT/doT.js"></script>
     <script src="/bower_components/codebird-js/codebird.js"></script>
     <script src="/bower_components/moment/moment.js"></script>
-    <script src="/bower_components/moment/locale/it.js"></script>
     <script src="/bower_components/social-feed/js/jquery.socialfeed.js"></script>
     <!-- endbower -->
     {% include "./premium/premium-js.html" %}
