@@ -2,15 +2,6 @@
   PRODUCT PAGE MEDIA    PRODUCT PAGE MEDIA
 ************************************************/
 
-  .product-page-media-divider-line {
-    z-index: -1;
-    height: 1px;
-    width: 100%;
-    // margin: 2% 0;
-    position: absolute;
-    top: 50%;
-  }
-
   section#product-page-media {
     // padding-bottom: 2%;
 
@@ -39,7 +30,7 @@
 
     .product-page-light-gallery-wrapper {
       text-align: center;
-      // padding: 6%;
+      padding: 1%;
       // border: 1px solid red;
 
       #lightgallery a {

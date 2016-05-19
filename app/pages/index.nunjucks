@@ -2,7 +2,8 @@
 
 {% block content %}
 
-  {% include "templates/_partials/navigation.html" %}
+  {# include "templates/_partials/navigation.html" #}
+  {% include "templates/_partials/navigation-jet.html" %}
   {% include "templates/_partials/nav-overlay.html" %}
 
   {% include "templates/home/hero.html" %}

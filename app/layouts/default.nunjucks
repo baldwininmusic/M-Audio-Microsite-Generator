@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/bower_components/Ionicons/css/ionicons.css" />
     <link rel="stylesheet" href="/bower_components/lightgallery/dist/css/lightgallery.css" />
     <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css" />
     <!-- endbower -->
     {% include "./premium/premium-css.html" %}
     <!-- endbuild -->
