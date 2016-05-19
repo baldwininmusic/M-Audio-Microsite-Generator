@@ -1,0 +1,37 @@
+/*
+|--------------------------------------------------------------------------
+|                                 M-Tracks
+|--------------------------------------------------------------------------
+*/
+
+  section#m-tracks {
+    height: 70vh;
+    background: $gallery;
+  }
+
+  .m-tracks-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // border: 5px solid green;
+  }
+
+  .m-track-header {
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .m-tracks-divider {
+    width: 40px;
+    height: 3px;
+    margin: 10px 0;
+    background: $m-audio-orange;
+  }
+
+  .m-tracks-learn-more-btn {
+    padding: 10px 20px;
+    border: 2px solid $m-audio-orange;
+  }
