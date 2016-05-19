@@ -65,3 +65,53 @@ nav {
     } /* ul */
   }
 }
+
+
+/*
+|--------------------------------------------------------------------------
+|                                 SEARCH BAR
+|--------------------------------------------------------------------------
+*/
+
+  section#search-bar {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 5px solid red;
+  }
+
+  .search-bar-input-field {
+    width: 80%;
+    margin: 0;
+    background: #eee;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #444;
+
+    &:focus {
+      background: #eee;
+      border: none;
+      box-shadow: none;
+      border-bottom: 1px solid #444;
+    }
+  }
+
+  .search-bar-submit-btn {
+    padding: 0 10px;
+  }
+
+  .search-bar-close-btn {
+
+    .ion-ios-close-outline {
+      font-size: 1.5rem;
+      color: $m-audio-orange;
+    }
+  }
+
+

@@ -47,6 +47,20 @@ $(function() {
       }
   });
 
+
+  // SEARCH BAR
+    $('#search-bar').hide();
+
+    $('.ion-ios-search').on('click', function(e) {
+      e.preventDefault();
+      $('#search-bar').fadeIn(500);
+    });
+
+    $('.ion-ios-close-outline').on('click', function() {
+      $('#search-bar').fadeOut(500);
+    });
+
+
   // HERO CAROUSEL
     $('.hero-carousel').slick({
       dots: true,

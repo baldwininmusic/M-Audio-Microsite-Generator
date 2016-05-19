@@ -4,6 +4,8 @@
 |--------------------------------------------------------------------------
 */
 
+
+
 section#product-page-downloads {
 
   .product-page-downloads-divider-line {
@@ -30,4 +32,17 @@ section#product-page-downloads {
     }
   }
 
+}
+
+/* ACCORDIAN STYLES */
+
+.accordion-title {
+  color: $m-audio-orange;
+  font-size: 1rem;
+
+  &:focus,
+  &:hover {
+    color: $m-audio-slate;
+    background-color: #fff;
+  }
 }
