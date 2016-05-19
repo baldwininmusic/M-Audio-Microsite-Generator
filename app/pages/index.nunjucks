@@ -6,9 +6,12 @@
   {% include "templates/_partials/nav-overlay.html" %}
 
   {% include "templates/home/hero.html" %}
-  {% include "templates/home/featured-callouts.html" %}
+  {% include "templates/home/single-product-feature.html" %}
+  {% include "templates/home/featured-callouts-2-blocks.html" %}
   {% include "templates/home/quote-strip.html" %}
-  {% include "templates/home/categories.html" %}
+  {# include "templates/home/categories.html" #}
+  {% include "templates/home/categories-2-columns.html" %}
+  {# include "templates/home/featured-callouts.html" #}
   {# include "templates/home/featured-products.html" #}
   {# include "templates/home/featured-products-2.html" #}
   {# include "templates/home/blog.html" #}

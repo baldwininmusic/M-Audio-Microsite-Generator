@@ -1,0 +1,53 @@
+/*
+|--------------------------------------------------------------------------
+|                                 SINGLE PRODUCT FEATURE
+|--------------------------------------------------------------------------
+*/
+
+  section#single-product-feature {
+    height: 90vh;
+    background: #eee;
+    // border: 5px solid red;
+  }
+
+  .single-product-feature-container {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // border: 5px solid red;
+  }
+
+  .single-product-feature-logo {
+    padding: 2% 0;
+
+    svg {
+      width: 300px;
+    }
+  }
+
+
+  .single-product-feature-copy {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .single-product-feature-btn {
+    padding: 2% 0;
+
+    span {
+      padding: 10px 20px;
+      color: #E12726;
+      border: 3px solid black;
+    }
+  }
+
+  .single-product-feature-image {
+    text-align: center;
+    // border: 5px solid green;
+
+    img {
+      width: 70%;
+    }
+  }

@@ -1,0 +1,46 @@
+/*
+|--------------------------------------------------------------------------
+|                                 FEATURED CALLOUTS
+|--------------------------------------------------------------------------
+*/
+
+  section#featured-callouts {
+
+
+    .columns {
+      padding: 0;
+    }
+
+    .full-width-row {
+
+    }
+
+    .featured-callouts-image-container {
+    }
+
+    .featured-callouts-copy-container {
+      // padding: 2%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h4 {
+        margin: 0;
+      }
+
+      p {
+        padding: 2% 4%;
+      }
+    } /* .featured-callouts-copy-container */
+
+    .featured-callouts-header-separator {
+      width: 40px;
+      height: 3px;
+      background: $m-audio-orange;
+    }
+
+    .callout-copy-2 {
+      // text-align: right;
+    }
+  }

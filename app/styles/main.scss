@@ -46,6 +46,7 @@
   @import 'tools/vars';
   // @import 'tools/media-queries'; // Include Breakpoint Above!
   @import 'tools/general-override';
+  @import 'tools/colors/colors';
 
 // PAGES / PARTIALS
   // @import 'partials/navigation';
@@ -55,12 +56,15 @@
 
 // HOMEPAGE
   @import 'pages/home/hero';
-  @import 'pages/home/featured-callouts';
+  @import 'pages/home/single-product-feature';
+  @import 'pages/home/featured-callouts-2-blocks';
+  // @import 'pages/home/featured-callouts';
   // @import 'pages/home/featured-products';
   // @import 'pages/home/featured-products-2';
   @import 'pages/home/blog';
   @import 'pages/home/quote-strip';
-  @import 'pages/home/categories';
+  // @import 'pages/home/categories';
+  @import 'pages/home/categories-2-columns';
   // @import 'pages/home/social-feed';
 
 // CATEGORY PAGE
