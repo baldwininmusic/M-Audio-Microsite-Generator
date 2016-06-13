@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>YSG</title>
+    <link rel="author" href="humans.txt" />
+    <title>Yo Gulp Starter</title>
 
     <!-- FAVICON ICONS -->
       <!-- Generate using http://realfavicongenerator.net/ -->
@@ -16,8 +17,8 @@
     <link rel="stylesheet" href="/bower_components/Ionicons/css/ionicons.css" />
     <link rel="stylesheet" href="/bower_components/lightgallery/dist/css/lightgallery.css" />
     <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
-    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css" />
     <!-- endbower -->
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css" />
     {% include "./premium/premium-css.html" %}
     <!-- endbuild -->
 
@@ -26,12 +27,8 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/src/Modernizr.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-
-    <!-- ADOBE FONT KIT -->
-    <script src="https://use.typekit.net/swp5rja.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -47,7 +44,7 @@
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='https://www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-2191408-17');ga('send','pageview');
+      ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
     <!-- build:js scripts/vendor.js -->
@@ -56,14 +53,7 @@
     <script src="/bower_components/what-input/what-input.js"></script>
     <script src="/bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="/bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
-    <script src="/bower_components/lightgallery/dist/js/lg-fullscreen.min.js"></script>
-    <script src="/bower_components/lightgallery/dist/js/lg-zoom.min.js"></script>
-    <script src="/bower_components/lightgallery/dist/js/lg-thumbnail.min.js"></script>
     <script src="/bower_components/slick-carousel/slick/slick.js"></script>
-    <!-- <script src="/bower_components/doT/doT.js"></script>
-    <script src="/bower_components/codebird-js/codebird.js"></script>
-    <script src="/bower_components/moment/moment.js"></script>
-    <script src="/bower_components/social-feed/js/jquery.socialfeed.js"></script> -->
     <!-- endbower -->
     {% include "./premium/premium-js.html" %}
     <!-- endbuild -->

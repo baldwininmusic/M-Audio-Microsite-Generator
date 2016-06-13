@@ -68,6 +68,8 @@ bower i --save ionicons
 bower i --save lightgallery
 ```
 
+- [LostGrid (PostCSS)](http://peterramsing.github.io/lost/)
+
 - [Magic CSS](http://www.minimamente.com/example/magic_animations/)
 ```javascript
 bower i --save magic
@@ -80,6 +82,7 @@ bower i --save material-design-lite
 
 - [Modernizr](https://modernizr.com/)
 
+
 - [Neat](http://neat.bourbon.io/)
 ```javascript
 bower i --save neat
@@ -91,9 +94,11 @@ bower i --save normalize.css
 ```
 
 - [Owl Carousel 2](http://owlcarousel2.github.io/OwlCarousel2/)
-````
+````javascript
 bower install --save owl.carousel
 ```
+
+- [RuckSack (PostCSS)](https://simplaio.github.io/rucksack/)
 
 - [Skrollr](http://prinzhorn.github.io/skrollr/)
 ```javascript
