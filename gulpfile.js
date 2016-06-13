@@ -99,7 +99,7 @@ gulp.task('html', ['views', 'styles', 'scripts'], () => {
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.cssnano({safe: true, autoprefixer: false})))
-    .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
+    // .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
     .pipe(gulp.dest('dist'));
 });
 
@@ -108,13 +108,13 @@ gulp.task('html', ['views', 'styles', 'scripts'], () => {
 // Image Compression
   gulp.task('images', () => {
     return gulp.src('app/images/**/*')
-      .pipe($.cache($.imagemin({
-        progressive: true,
-        interlaced: true,
-        // don't remove IDs from SVGs, they are often used
-        // as hooks for embedding and styling
-        svgoPlugins: [{cleanupIDs: false}]
-      })))
+      // .pipe($.cache($.imagemin({
+      //   progressive: true,
+      //   interlaced: true,
+      //   // don't remove IDs from SVGs, they are often used
+      //   // as hooks for embedding and styling
+      //   svgoPlugins: [{cleanupIDs: false}]
+      // })))
       .pipe(gulp.dest('dist/images'));
   });
 

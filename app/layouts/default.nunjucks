@@ -52,9 +52,9 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/what-input/what-input.js"></script>
     <script src="/bower_components/foundation-sites/dist/foundation.js"></script>
-    <script src="/bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
     <script src="/bower_components/slick-carousel/slick/slick.js"></script>
     <!-- endbower -->
+    <script src="/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script>
     {% include "./premium/premium-js.html" %}
     <!-- endbuild -->
 

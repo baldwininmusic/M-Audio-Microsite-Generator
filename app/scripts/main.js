@@ -205,6 +205,12 @@ $(function() {
 
   //LIGHT GALLERY
     $('#lightgallery').lightGallery({
+      selector: 'a',
+      mode: 'lg-fade'
+    });
+
+    $('#lightgallery-video').lightGallery({
+      selector: 'a',
       mode: 'lg-fade'
     });
 

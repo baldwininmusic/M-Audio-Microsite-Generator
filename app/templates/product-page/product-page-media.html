@@ -9,27 +9,94 @@
       <div class="product-page-media-divider-line gradient"></div>
     </div>  -->
 
+
+<!--
+|--------------------------------------------------------------------------
+|                                 Images
+|--------------------------------------------------------------------------
+-->
+
     <div class="product-page-media-container">
       <div class="row">
         <div class="small-12 medium-8 medium-offset-2 columns">
-          <h4>Media</h4>
+          <h4>Images</h4>
 
           <div class="product-page-light-gallery-wrapper">
             <div id="lightgallery">
-              <a href="images/product-page/1.jpg">
-                  <img src="images/product-page/1.jpg" />
-              </a>
-              <a href="images/product-page/2.jpg">
-                  <img src="images/product-page/2.jpg" />
-              </a>
-              <a href="images/product-page/3.jpg">
-                  <img src="images/product-page/3.jpg" />
-              </a>
+              <div class="row small-up-1 medium-up-2 large-up-4">
+                <div class="column">
+                  <a href="images/product-page/1.jpg">
+                      <img src="images/product-page/1.jpg" />
+                  </a>
+                </div> <!-- column -->
+                <div class="column">
+                  <a href="images/product-page/2.jpg">
+                      <img src="images/product-page/2.jpg" />
+                  </a>
+                </div> <!-- column -->
+                <div class="column">
+                  <a href="images/product-page/3.jpg">
+                      <img src="images/product-page/3.jpg" />
+                  </a>
+                </div> <!-- column -->
             </div> <!-- lightgallery -->
           </div> <!-- product-page-light-gallery-wrapper -->
+
 
         </div> <!-- columns -->
       </div> <!-- row -->
     </div> <!-- product-page-media-container -->
 
+
+
+<!--
+|--------------------------------------------------------------------------
+|                                 Videos
+|--------------------------------------------------------------------------
+-->
+
+
+    <div class="product-page-media-container">
+      <div class="row">
+        <div class="small-12 medium-8 medium-offset-2 columns">
+          <h4>Videos</h4>
+
+          <div class="product-page-light-gallery-wrapper">
+            <div id="lightgallery-video">
+              <div class="row small-up-1 medium-up-2 large-up-4 media-row">
+                <div class="column youtube-video-column">
+
+                  <!--
+                      John See the Scripts Below to see how this works.
+                      I am using ES6 Syntax, so let me know if you have any questions
+                  -->
+
+                </div> <!-- column -->
+            </div> <!-- lightgallery -->
+          </div> <!-- product-page-light-gallery-wrapper -->
+
+
+        </div> <!-- columns -->
+      </div> <!-- row -->
+    </div> <!-- product-page-media-container -->
+
+
   </section>
+
+  <script type="text/javascript">
+    let youtubeIdArray = ['qpDr2W_Y_Pg', 'teDUvTqWiFA', 'gFzNv5bY2wQ', 'nGwKSC5zIcc'];
+    let videoDomElement = document.querySelector(".media-row")
+    let testArray = [];
+
+    for (i = 0; i < youtubeIdArray.length; i++) {
+      let videoContents = `
+        <div class="column">
+          <a href="https://youtu.be/${youtubeIdArray[i]}">
+            <img src="http://img.youtube.com/vi/${youtubeIdArray[i]}/maxresdefault.jpg" />
+          </a>
+        </div>
+      `;
+      testArray.push(videoContents);
+    };
+    videoDomElement.innerHTML = testArray.join("");
+  </script>
