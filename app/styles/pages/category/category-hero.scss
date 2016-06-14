@@ -3,8 +3,9 @@
 ************************************************/
 
   section#categories-hero {
+    padding-top: 80px;
     // height: 100vh;
-    // background: url('../images/category/backgrounds/headphones-hipster.jpg');
+    // background: url('../images/category/backgrounds/1.jpg');
     // background-size: cover;
     // background-position: fixed;
 
@@ -21,9 +22,12 @@
     }
 
     .category-cards-container {
-      padding-top: 120px;
-      position: absolute;
-      top: 0;
+      // background: url('../images/category/backgrounds/1.jpg');
+      // background-size: cover;
+      // background-attachment: fixed;
+      // padding-top: 120px;
+      // position: absolute;
+      // top: 0;
       // border: 2px solid gold;
     }
 

@@ -7,7 +7,7 @@ $(function() {
   });
 
   // NAV OVERLAY SCRIPTS
-  $('#nav-overlay').hide();
+  // $('#nav-overlay').hide();
 
   $('.jquery-open').on('click', function(e) {
       e.preventDefault();
@@ -267,5 +267,7 @@ $(function() {
     }).on('mouseleave', function() {
       $('.artists-hover-div').hide();
     });
+
+
 
 }); // CLOSING OF $(function() {

@@ -4,7 +4,7 @@
 
   <section id="categories-hero">
 
-    <div class="category-hero-bg-img">
+    <!-- <div class="category-hero-bg-img"> -->
       <!--
           John,
           See the Scripts Below to see how this works.
@@ -12,7 +12,7 @@
 
           (╯°□°)╯︵ ┻━┻
       -->
-    </div> <!-- category-hero-bg-img -->
+    <!-- </div> <!-- category-hero-bg-img -->
 
     <div class="category-cards-container">
 
@@ -117,15 +117,18 @@
         </div> <!-- columns -->
       </div> <!-- row -->
 
-    </div> <!-- category-cards-container -->
-
   </section>
 
 
 
   <script type="text/javascript">
     const randomNum = Math.floor(Math.random() * 6) + 1
-    let categoryBackground = document.querySelector('.category-hero-bg-img');
-    let categoryBgImg = `<img src="images/category/backgrounds/${randomNum}.jpg">`
-    categoryBackground.innerHTML = categoryBgImg;
+    let categoryBackground = document.querySelector('.category-cards-container');
+    let cssString =
+    `
+    background: url('images/category/backgrounds/${randomNum}.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+    `
+    let categoryBgImg = categoryBackground.style.cssText = cssString;
   </script>
