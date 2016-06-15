@@ -4,7 +4,8 @@
 
   {# include "templates/_partials/navigation.html" #}
   {% include "templates/_partials/navigation-jet.html" %}
-  {% include "templates/_partials/nav-overlay.html" %}
+  {# include "templates/_partials/nav-overlay.html" #}
+  {% include "templates/_partials/nav-overlay-huge-menu.html" %}
 
   {% include "templates/home/hero.html" %}
   {% include "templates/home/single-product-feature.html" %}

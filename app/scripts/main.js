@@ -7,13 +7,15 @@ $(function() {
   });
 
   // NAV OVERLAY SCRIPTS
-  // $('#nav-overlay').hide();
+  // $('#nav-overlay-huge-menu').hide();
+    $('.nav-overlay-close-button').on('click', function(){
+      $('#nav-overlay-huge-menu').fadeOut(1000);
+    });
 
-  $('.jquery-open').on('click', function(e) {
-      e.preventDefault();
-    $('#nav-overlay').fadeIn(1000);
-    $('.hero-logo-jquery, .hero-h2-jquery').fadeTo(1000, 0);
-  });
+    $('.jquery-open').on('click', function(e) {
+        e.preventDefault();
+      $('#nav-overlay-huge-menu').fadeIn(1000);
+    });
 
   // $('.jquery-close').on('click', function() {
   //   $('#nav-overlay').fadeOut(1000);
