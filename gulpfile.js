@@ -16,6 +16,12 @@ const reload = browserSync.reload;
       .pipe($.ghPages());
   });
 
+// Move M-Audio Slider
+  gulp.task('m-audio-slider', function() {
+    return gulp.src('app/m-audio-slider/**/*')
+    .pipe(gulp.dest('dist/m-audio-slider'))
+  });
+
 
 // Nunjucks Templates
   gulp.task('views', () => {
@@ -228,7 +234,7 @@ gulp.task('serve:test', ['scripts'], () => {
       .pipe(gulp.dest('app/layouts'));
   });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras', 'm-audio-slider'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
