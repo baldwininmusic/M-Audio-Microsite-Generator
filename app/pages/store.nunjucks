@@ -1,0 +1,12 @@
+{% extends "layouts/default.nunjucks" %}
+
+{% block content %}
+
+  {# include "templates/_partials/navigation.html" #}
+  {% include "templates/_partials/navigation-jet.html" %}
+  {# include "templates/_partials/nav-overlay.html" #}
+
+  {% include "templates/store/store-hero.html" %}
+
+  {% include "templates/_partials/footer.html" %}
+{% endblock %}

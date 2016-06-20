@@ -1,0 +1,73 @@
+/***********************************************
+  STORE    HERO      STORE      HERO
+************************************************/
+
+  section#store-hero {
+    padding-top: 80px;
+    // height: 100vh;
+    // background: url('../images/category/backgrounds/1.jpg');
+    // background-size: cover;
+    // background-position: fixed;
+
+    .category-hero-bg-img {
+      position: relative;
+    }
+
+    h5, p {
+      padding-left: 10px;
+    }
+
+    .columns {
+      padding: 0;
+    }
+
+    .category-cards-container {
+      padding: 40px 0;
+    }
+
+    .category-card {
+      overflow: hidden;
+      margin: 10px;
+      border: 1px solid #444;
+
+      img {
+        z-index: 1;
+        // border-radius: 5px 5px 0 0;
+      }
+    }
+
+    .category-card-img-container {
+      overflow: hidden;
+    }
+
+    .cat-card-text {
+      z-index: 99;
+      border-radius: 1px;
+      // border-bottom: 1px solid $m-audio-orange;
+      border-top: 1px solid $m-audio-slate;
+      background: rgba(255,255,255, 0.8);
+
+      p {
+        font-size: calc(2px + 9 * ( (100vw - 420px) / 860));
+      }
+    }
+
+    .category-row-2 {
+      margin-top: 10px;
+    }
+
+    .store-buy-button {
+      text-align: center;
+      background: $m-audio-slate;
+      color: #fff;
+      padding: 10px 0;
+      transition: all 0.3s;
+
+      &:hover {
+        background: $m-audio-orange;
+        transition: all 0.3s;
+      }
+    }
+
+
+  } /* section#categories-hero */
