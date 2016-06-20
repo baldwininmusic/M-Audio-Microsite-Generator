@@ -1,0 +1,24 @@
+/*
+|--------------------------------------------------------------------------
+|                                 Mobile Nav
+|--------------------------------------------------------------------------
+*/
+
+  section#mobile-nav {
+    background: #fff;
+
+    a {
+      color: $m-audio-slate;
+    }
+
+    .close-button {
+      top: -11px;
+      color: black;
+    }
+
+    .title {
+      background: $m-audio-orange;
+      color: #fff;
+      padding: 5px;
+    }
+  }

@@ -35,7 +35,21 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    {% block content %}{% endblock %}
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+          {% include "templates/_partials/mobile-nav.html" %}
+        </div> <!-- /.off-canvas position-left -->
+
+
+
+
+        <div class="off-canvas-content" data-off-canvas-content>
+          {% block content %}{% endblock %}
+        </div> <!-- /.off-canvas-content -->
+      </div> <!-- /.off-canvas-wrapper-inner -->
+    </div> <!-- /.off-canvas-wrapper -->
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

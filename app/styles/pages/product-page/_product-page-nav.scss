@@ -5,6 +5,10 @@
   nav#product-page-nav {
     margin-top: 10%;
 
+    a {
+      color: $m-audio-orange;
+    }
+
     h4 {
       margin: 0;
       // font-family: $font-pn-thin;

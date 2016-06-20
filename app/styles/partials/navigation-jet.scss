@@ -153,3 +153,32 @@ nav#jet-navigation {
       color: $m-audio-slate;
     }
   }
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                                 Mobile Top Bar
+|--------------------------------------------------------------------------
+*/
+
+.mobile-top-bar-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 0; 
+}
+
+.mobile-top-bar-hamburger {
+  color: $m-audio-orange;
+  font-size: 1.5em;
+  padding-left: 10px;
+}
+
+.m-audio-logo-mobile-top-bar {
+  padding-left: 10px;
+  svg {
+    fill: #444;
+    width: 200px;
+  }
+}
