@@ -55,3 +55,38 @@
     } /* product-page-hero-text-wrapper */
 
   } /* section#product-page-hero */
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      MEDIUM MEDIA QUERIES
+|                min-width 641px and max-width 1024px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+  .product-page-hero-container {
+    margin-top: 0px !important;
+    // width: 50%;
+    // border: 5px solid green;
+  }
+
+  .product-page-hero-text-wrapper {
+    text-align: center;
+    margin-top: 5% !important;
+    // border: 5px solid red;
+
+    .product-page-name-hero-copy {
+      margin: 0 auto;
+      // border: 5px solid red;
+    }
+
+  } /* product-page-hero-text-wrapper */
+
+}/* MEDIUM MEDIA QUERY */
