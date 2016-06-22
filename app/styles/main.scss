@@ -40,6 +40,8 @@
 // TYPEPLATE
  @import 'bower_components/typeplate-starter-kit/scss/typeplate-index';
 
+// Courier New font-pt-sans
+  @import '../fonts/courier-new/stylesheet';
 
 // TOOLS
   @import 'tools/fonts';
@@ -60,7 +62,7 @@
 // HOMEPAGE
   @import 'pages/home/hero';
   @import 'pages/home/single-product-feature';
-  @import 'pages/home/featured-callouts-2-blocks';
+  @import 'pages/home/community';
   // @import 'pages/home/featured-callouts';
   // @import 'pages/home/featured-products';
   // @import 'pages/home/featured-products-2';
