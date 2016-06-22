@@ -271,5 +271,29 @@ $(function() {
     });
 
 
+// M-Tracks Hover SCRIPTS
+  $('.hover-content-1').hide();
+  $('.m-track-container-1').on('mouseenter', function() {
+    $('.hover-content-1').fadeIn(400);
+  }).on('mouseleave', function() {
+    $('.hover-content-1').fadeOut(400);
+  });
+
+  $('.hover-content-2').hide();
+  $('.m-track-container-2').on('mouseenter', function() {
+    $('.hover-content-2').fadeIn(400);
+  }).on('mouseleave', function() {
+    $('.hover-content-2').fadeOut(400);
+  });
+
+  $('.hover-content-3').hide();
+  $('.m-track-container-3').on('mouseenter', function() {
+    $('.hover-content-3').fadeIn(400);
+  }).on('mouseleave', function() {
+    $('.hover-content-3').fadeOut(400);
+  });
+
+
+
 
 }); // CLOSING OF $(function() {

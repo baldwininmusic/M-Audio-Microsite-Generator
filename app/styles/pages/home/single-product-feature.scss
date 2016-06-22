@@ -5,49 +5,87 @@
 */
 
   section#single-product-feature {
-    height: 90vh;
-    background: #eee;
+    background: rgb(218, 217, 215);
+    padding-bottom: 30px;
     // border: 5px solid red;
-  }
 
-  .single-product-feature-container {
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    // border: 5px solid red;
-  }
+    .single-product-feature-label {
+      padding-left: 30px;
+      padding-bottom: 30px;
 
-  .single-product-feature-logo {
-    padding: 2% 0;
+      .single-product-feature-label-accent-color {
+        background: #839FAE;
+        height: 4px;
+        width: 130px;
+      }
 
-    svg {
-      width: 300px;
+      h6 {
+        color: #77777B;
+        letter-spacing: 2px;
+      }
     }
-  }
 
+/*
+|--------------------------------------------------------------------------
+|                                 Right Column
+|--------------------------------------------------------------------------
+*/
 
-  .single-product-feature-copy {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .single-product-feature-btn {
-    padding: 2% 0;
-
-    span {
-      padding: 10px 20px;
-      color: #E12726;
-      border: 3px solid black;
+    .single-product-feature-right-column-container {
+      text-align: center;
+      // border: 5px solid green;
     }
-  }
 
-  .single-product-feature-image {
-    text-align: center;
-    // border: 5px solid green;
+    .single-product-feature-logo {
 
-    img {
-      width: 70%;
+
+
+      svg {
+        width: 500px;
+        padding-bottom: 20px;
+        border-bottom: 5px solid #AAA9A7;
+      }
     }
-  }
+
+    .single-product-feature-sub-title {
+
+      p {
+        font-family: $font-secondary;
+        font-size: 1.2rem;
+        color: #77777B;
+      }
+    }
+
+    .single-product-feature-features {
+      // padding: 0 10%;
+      // border: 5px solid green;
+
+      p {
+        width: 500px;
+        margin: 0 auto;
+        font-weight: 100;
+        font-size: .8rem;
+      }
+
+      .single-product-feature-features-pipe {
+        color: #839FAE;
+      }
+
+      .features-blue-text {
+        letter-spacing: 2px;
+        color: #839FAE;
+      }
+    }
+
+    .single-product-feature-learn-more-btn{
+      a {
+        color: #77777B;
+      }
+      span {
+        background: #D2D1D0;
+        font-family: $font-secondary;
+        font-size: .8rem;
+      }
+    }
+
+  } /* section#single-product-feature */
