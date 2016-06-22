@@ -69,87 +69,63 @@ $(function() {
     });
 
 
-  // HERO CAROUSEL
-    $('.hero-carousel').slick({
-      dots: true,
-      infinite: true,
-      speed: 2000,
-      fade: true,
-      lazyLoad: 'ondemand',
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      pauseOnHover: true,
-      cssEase: 'linear'
+  // M-Tracks Hover SCRIPTS
+    $('.hover-content-1').hide();
+    $('.m-track-container-1').on('mouseenter', function() {
+      $('.hover-content-1').stop().fadeIn(400);
+    }).on('mouseleave', function() {
+      $('.hover-content-1').stop().fadeOut(400);
     });
 
-  // CATEGORIES GRID ON HOMEPAGE
+    $('.hover-content-2').hide();
+    $('.m-track-container-2').on('mouseenter', function() {
+      $('.hover-content-2').stop().fadeIn(400);
+    }).on('mouseleave', function() {
+      $('.hover-content-2').stop().fadeOut(400);
+    });
 
-  // GRID #1
-  $('.grid-img-1').on('mouseenter', function(){
-    $('.grid-img-1 .overlay').stop().fadeOut(500);
-    $('.grid-img-1 .grid-h4').stop().fadeOut(500);
-  }).on('mouseleave', function(){
-    $('.grid-img-1 .overlay').stop().fadeIn(500);
-    $('.grid-img-1 .grid-h4').stop().fadeIn(500);
-  });
-  // GRID #2
-  $('.grid-img-2').on('mouseenter', function(){
-    $('.grid-img-2 .overlay').stop().fadeOut(500);
-    $('.grid-img-2 .grid-h4').stop().fadeOut(500);
-  }).on('mouseleave', function(){
-    $('.grid-img-2 .overlay').stop().fadeIn(500);
-    $('.grid-img-2 .grid-h4').stop().fadeIn(500);
-  });
-  // GRID #3
-  $('.grid-img-3').on('mouseenter', function(){
-    $('.grid-img-3 .overlay').stop().fadeOut(500);
-    $('.grid-img-3 .grid-h4').stop().fadeOut(500);
-  }).on('mouseleave', function(){
-    $('.grid-img-3 .overlay').stop().fadeIn(500);
-    $('.grid-img-3 .grid-h4').stop().fadeIn(500);
-  });
-  // GRID #4
-  $('.grid-img-4').on('mouseenter', function(){
-    $('.grid-img-4 .overlay').stop().fadeOut(500);
-    $('.grid-img-4 .grid-h4').stop().fadeOut(500);
-  }).on('mouseleave', function(){
-    $('.grid-img-4 .overlay').stop().fadeIn(500);
-    $('.grid-img-4 .grid-h4').stop().fadeIn(500);
-  });
-  // GRID #5
-  $('.grid-img-5').on('mouseenter', function(){
-    $('.grid-img-5 .overlay').stop().fadeOut(500);
-    $('.grid-img-5 .grid-h4').stop().fadeOut(500);
-  }).on('mouseleave', function(){
-    $('.grid-img-5 .overlay').stop().fadeIn(500);
-    $('.grid-img-5 .grid-h4').stop().fadeIn(500);
-  });
-  // GRID #6
-  $('.grid-img-6').on('mouseenter', function(){
-    $('.grid-img-6 .overlay').stop().fadeOut(500);
-    $('.grid-img-6 .grid-h4').stop().fadeOut(500);
-  }).on('mouseleave', function(){
-    $('.grid-img-6 .overlay').stop().fadeIn(500);
-    $('.grid-img-6 .grid-h4').stop().fadeIn(500);
-  });
-  // GRID #7
-  $('.grid-img-7').on('mouseenter', function(){
-    $('.grid-img-7 .overlay').stop().fadeOut(500);
-    $('.grid-img-7 .grid-h4').stop().fadeOut(500);
-  }).on('mouseleave', function(){
-    $('.grid-img-7 .overlay').stop().fadeIn(500);
-    $('.grid-img-7 .grid-h4').stop().fadeIn(500);
-  });
-  // GRID #8
-  $('.grid-img-8').on('mouseenter', function(){
-    $('.grid-img-8 .overlay').stop().fadeOut(500);
-    $('.grid-img-8 .grid-h4').stop().fadeOut(500);
-  }).on('mouseleave', function(){
-    $('.grid-img-8 .overlay').stop().fadeIn(500);
-    $('.grid-img-8 .grid-h4').stop().fadeIn(500);
-  });
+    $('.hover-content-3').hide();
+    $('.m-track-container-3').on('mouseenter', function() {
+      $('.hover-content-3').stop().fadeIn(400);
+    }).on('mouseleave', function() {
+      $('.hover-content-3').stop().fadeOut(400);
+    });
+
+// Categories Slideshow
+
+
+
+
+  $('.home-page-categories').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  arrows: true,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        dots: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        dots: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
 
 // PRODUCT PAGE HERO CAROUSEL
   $('.product-carousel').slick({
@@ -271,27 +247,6 @@ $(function() {
     });
 
 
-// M-Tracks Hover SCRIPTS
-  $('.hover-content-1').hide();
-  $('.m-track-container-1').on('mouseenter', function() {
-    $('.hover-content-1').fadeIn(400);
-  }).on('mouseleave', function() {
-    $('.hover-content-1').fadeOut(400);
-  });
-
-  $('.hover-content-2').hide();
-  $('.m-track-container-2').on('mouseenter', function() {
-    $('.hover-content-2').fadeIn(400);
-  }).on('mouseleave', function() {
-    $('.hover-content-2').fadeOut(400);
-  });
-
-  $('.hover-content-3').hide();
-  $('.m-track-container-3').on('mouseenter', function() {
-    $('.hover-content-3').fadeIn(400);
-  }).on('mouseleave', function() {
-    $('.hover-content-3').fadeOut(400);
-  });
 
 
 
