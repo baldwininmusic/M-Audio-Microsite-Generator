@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+	<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+	<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+	<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+	<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>M-Audio - Slider Revolution</title>
+		<meta name="description" content="Slider Revolution Example" />
+		<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+		<meta name="author" content="ThemePunch" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- LOAD JQUERY LIBRARY -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+
+		<!-- LOADING FONTS AND ICONS -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet" property="stylesheet" type="text/css" media="all" /><link href="http://fonts.googleapis.com/css?family=Playfair+Display:700italic" rel="stylesheet" property="stylesheet" type="text/css" media="all" /><link href="http://fonts.googleapis.com/css?family=Playfair Display:700italic" rel="stylesheet" property="stylesheet" type="text/css" media="all" /><link href="http://fonts.googleapis.com/css?family=Lato:300,700,400" rel="stylesheet" property="stylesheet" type="text/css" media="all" /><link href="http://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" property="stylesheet" type="text/css" media="all" /><link href="http://fonts.googleapis.com/css?family=Roboto Condensed:400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+
+		<link rel="stylesheet" type="text/css" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+
+		<!-- REVOLUTION STYLE SHEETS -->
+		<link rel="stylesheet" type="text/css" href="css/settings.css">
+		<!-- REVOLUTION LAYERS STYLES -->
+		<style>.tp-caption.Concept-SubTitle,.Concept-SubTitle{color:rgba(255,255,255,0.65);font-size:25px;line-height:25px;font-weight:700;font-style:italic;font-family:Playfair Display;padding:0 0 10px 0;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left}.tp-caption.Concept-Title,.Concept-Title{color:rgba(255,255,255,1.00);font-size:70px;line-height:70px;font-weight:700;font-style:normal;font-family:Roboto Condensed;padding:0 0 10px 0;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-align:left;letter-spacing:5px}.tp-caption.Concept-MoreBtn,.Concept-MoreBtn{color:rgba(255,255,255,1.00);font-size:30px;line-height:30px;font-weight:300;font-style:normal;font-family:Roboto;padding:10px 8px 7px 10px;text-decoration:none;background-color:transparent;border-color:rgba(255,255,255,0);border-style:solid;border-width:0px;border-radius:50px 50px 50px 50px;text-align:left;letter-spacing:1px}.tp-caption.Concept-MoreBtn:hover,.Concept-MoreBtn:hover{color:rgba(255,255,255,1.00);text-decoration:none;background-color:rgba(255,255,255,0.15);border-color:rgba(255,255,255,0);border-style:solid;border-width:0px;border-radius:50px 50px 50px 50px;cursor:pointer}.tp-caption.Concept-Notice,.Concept-Notice{color:rgba(255,255,255,1.00);font-size:15px;line-height:15px;font-weight:400;font-style:normal;font-family:Roboto Condensed;padding:0px 0px 0px 0px;text-decoration:none;background-color:rgba(0,0,0,0);border-color:rgba(255,255,255,1.00);border-style:none;border-width:2px;border-radius:0 0 0 0px;text-align:center;letter-spacing:2px}.tp-caption.Concept-Content,.Concept-Content{color:rgba(255,255,255,1.00);font-size:20px;line-height:30px;font-weight:400;font-style:normal;font-family:Roboto Condensed;padding:0px 0px 0px 0px;text-decoration:none;background-color:rgba(0,0,0,0);border-color:rgba(255,255,255,1.00);border-style:none;border-width:2px;border-radius:0 0 0 0px;text-align:center}.tp-caption.Concept-LessBtn,.Concept-LessBtn{color:rgba(255,255,255,1.00);font-size:30px;line-height:30px;font-weight:300;font-style:normal;font-family:Roboto;padding:10px 8px 7px 10px;text-decoration:none;background-color:rgba(0,0,0,1.00);border-color:rgba(255,255,255,0);border-style:solid;border-width:0px;border-radius:50px 50px 50px 50px;text-align:left;letter-spacing:1px}.tp-caption.Concept-LessBtn:hover,.Concept-LessBtn:hover{color:rgba(0,0,0,1.00);text-decoration:none;background-color:rgba(255,255,255,1.00);border-color:rgba(255,255,255,0);border-style:solid;border-width:0px;border-radius:50px 50px 50px 50px;cursor:pointer}</style>
+<style type="text/css">.tp-caption.Concept-Content a,.tp-caption.Concept-Content a:visited{color:#fff !important; border-bottom:1px solid #fff !important; font-weight:700 !important}.tp-caption.Concept-Content a:hover{border-bottom:1px solid transparent !important}.tp-caption.Concept-Content-Dark a,.tp-caption.Concept-Content-Dark a:visited{color:#000 !important; border-bottom:1px solid #000 !important; font-weight:700 !important}.tp-caption.Concept-Content-Dark a:hover{border-bottom:1px solid transparent !important}</style>
+				<style type="text/css">.hermes.tparrows{cursor:pointer;background:#000;background:rgba(0,0,0,0.5);width:30px;height:110px;position:absolute;display:block;z-index:100}.hermes.tparrows:before{font-family:"revicons";font-size:15px;color:#fff;display:block;line-height:110px;text-align:center;  transform:translateX(0px);  -webkit-transform:translateX(0px);  transition:all 0.3s;  -webkit-transition:all 0.3s}.hermes.tparrows.tp-leftarrow:before{content:"\e824"}.hermes.tparrows.tp-rightarrow:before{content:"\e825"}.hermes.tparrows.tp-leftarrow:hover:before{transform:translateX(-20px);  -webkit-transform:translateX(-20px);   opacity:0}.hermes.tparrows.tp-rightarrow:hover:before{transform:translateX(20px);  -webkit-transform:translateX(20px);   opacity:0}.hermes .tp-arr-allwrapper{overflow:hidden;  position:absolute;width:180px;  height:140px;  top:0px;  left:0px;  visibility:hidden;   -webkit-transition:-webkit-transform 0.3s 0.3s; transition:transform 0.3s 0.3s; -webkit-perspective:1000px; perspective:1000px}.hermes.tp-rightarrow .tp-arr-allwrapper{right:0px;left:auto}.hermes.tparrows:hover .tp-arr-allwrapper{visibility:visible}.hermes .tp-arr-imgholder{width:180px;position:absolute; left:0px;top:0px;height:110px; transform:translateX(-180px); -webkit-transform:translateX(-180px); transition:all 0.3s; transition-delay:0.3s}.hermes.tp-rightarrow .tp-arr-imgholder{transform:translateX(180px); -webkit-transform:translateX(180px)}.hermes.tparrows:hover .tp-arr-imgholder{transform:translateX(0px);  -webkit-transform:translateX(0px)}.hermes .tp-arr-titleholder{top:110px; width:180px; text-align:left;  display:block; padding:0px 10px; line-height:30px; background:#000; background:rgba(0,0,0,0.75);color:#fff; font-weight:600; position:absolute; font-size:12px; white-space:nowrap; letter-spacing:1px; -webkit-transition:all 0.3s; transition:all 0.3s; -webkit-transform:rotateX(-90deg); transform:rotateX(-90deg); -webkit-transform-origin:50% 0; transform-origin:50% 0; box-sizing:border-box}.hermes.tparrows:hover .tp-arr-titleholder{-webkit-transition-delay:0.6s; transition-delay:0.6s; -webkit-transform:rotateX(0deg); transform:rotateX(0deg)}.zeus .tp-bullet{box-sizing:content-box; -webkit-box-sizing:content-box; border-radius:50%;   background-color:rgba(0,0,0,0);   -webkit-transition:opacity 0.3s ease;   transition:opacity 0.3s ease; width:13px;height:13px; border:2px solid #fff}.zeus .tp-bullet:after{content:""; position:absolute; width:100%; height:100%; left:0; border-radius:50%; background-color:#FFF; -webkit-transform:scale(0); transform:scale(0); -webkit-transform-origin:50% 50%; transform-origin:50% 50%; -webkit-transition:-webkit-transform 0.3s ease; transition:transform 0.3s ease}.zeus .tp-bullet:hover:after,.zeus .tp-bullet.selected:after{-webkit-transform:scale(1.2); transform:scale(1.2)}.zeus .tp-bullet-image,.zeus .tp-bullet-imageoverlay{width:135px; height:60px; position:absolute; background:#000; background:rgba(0,0,0,0.5); bottom:25px; left:50%; margin-left:-65px; box-sizing:border-box; background-size:cover; background-position:center center; visibility:hidden; opacity:0;  -webkit-backface-visibility:hidden; backface-visibility:hidden; -webkit-transform-origin:50% 50%;transform-origin:50% 50%; -webkit-transition:all 0.3s ease; transition:all 0.3s ease; border-radius:4px}.zeus .tp-bullet-title,.zeus .tp-bullet-imageoverlay{z-index:2; -webkit-transition:all 0.5s ease; transition:all 0.5s ease}.zeus .tp-bullet-title{color:#fff; text-align:center; line-height:15px; font-size:13px; font-weight:600;  z-index:3;  visibility:hidden; opacity:0;  -webkit-backface-visibility:hidden; backface-visibility:hidden; -webkit-transform-origin:50% 50%;transform-origin:50% 50%; -webkit-transition:all 0.3s ease; transition:all 0.3s ease; position:absolute; bottom:45px; width:135px;  vertical-align:middle; left:-57px}.zeus .tp-bullet:hover .tp-bullet-title,.zeus .tp-bullet:hover .tp-bullet-image,.zeus .tp-bullet:hover .tp-bullet-imageoverlay{opacity:1;   visibility:visible; -webkit-transform:translateY(0px);   transform:translateY(0px)}</style>
+				
+<style type="text/css">.button-down-slider a{color:#fff}.tp-caption.whitedivider3px{color:#000000;text-shadow:none;background-color:rgb(44,159,92);background-color:rgba(44,159,92,1);text-decoration:none;font-size:0px;line-height:0;min-width:656px;min-height:4px;border-width:0px;border-color:rgb(0,0,0);border-style:none}.tp-caption.store_button_full_black a,.tp-caption.store_button_full a{position:absolute; color:#fff; text-shadow:none; font-size:14px; line-height:18px !important; font-family:"Montserrat";padding:25px 40px 25px 40px !important;margin:0px;  cursor:pointer;   background:none;  border-radius:30px; height:0px;   background:#2C9F5C;   background-color:rgb(44,159,92);  background-color:rgba(44,159,92,0.8); text-transform:uppercase}.tp-caption.store_button_full a{background:#2C9F5C;  border:none; background-color:rgb(44,159,92); background-color:rgba(44,159,92,0.8); color:#fff !important}.tp-caption.store_button_full_black a{background:#121212;  background-color:rgb(18,18,18); background-color:rgba(18,18,18,0.9);  border:none; color:#fff !important}.tp-caption.store_button_full_black a,.tp-caption.store_button_full a{line-height:0px !important}.tp-caption.store_button a:hover,.tp-caption.store_button_full a:hover{background:#2C9F5C !important}.tp-caption.store_button_full_black a:hover{background:#121212}.tp-caption.pmc-button{border-bottom:none !important}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}.largeredbtn{font-family:"Raleway",sans-serif;font-weight:900;font-size:16px;line-height:60px;color:#fff !important;text-decoration:none;padding-left:40px;padding-right:80px;padding-top:22px;padding-bottom:22px;background:rgb(234,91,31); background:-moz-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(234,91,31,1)),color-stop(100%,rgba(227,58,12,1))); background:-webkit-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:-o-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:-ms-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:linear-gradient(to bottom,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea5b1f',endColorstr='#e33a0c',GradientType=0 )}.largeredbtn:hover{background:rgb(227,58,12); background:-moz-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(227,58,12,1)),color-stop(100%,rgba(234,91,31,1))); background:-webkit-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:-o-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:-ms-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:linear-gradient(to bottom,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e33a0c',endColorstr='#ea5b1f',GradientType=0 )}.fullrounded img{-webkit-border-radius:400px;-moz-border-radius:400px;border-radius:400px}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}.largeredbtn{font-family:"Raleway",sans-serif;font-weight:900;font-size:16px;line-height:60px;color:#fff !important;text-decoration:none;padding-left:40px;padding-right:80px;padding-top:22px;padding-bottom:22px;background:rgb(234,91,31); background:-moz-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(234,91,31,1)),color-stop(100%,rgba(227,58,12,1))); background:-webkit-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:-o-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:-ms-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:linear-gradient(to bottom,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea5b1f',endColorstr='#e33a0c',GradientType=0 )}.largeredbtn:hover{background:rgb(227,58,12); background:-moz-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(227,58,12,1)),color-stop(100%,rgba(234,91,31,1))); background:-webkit-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:-o-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:-ms-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:linear-gradient(to bottom,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e33a0c',endColorstr='#ea5b1f',GradientType=0 )}.fullrounded img{-webkit-border-radius:400px;-moz-border-radius:400px;border-radius:400px}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out;line-height:140%}.tp-caption a:hover{color:#ffa902}@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,700);.tp-caption a{color:#296169;text-shadow:none;text-decoration:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#296169}.tp-caption a{color:#296169;text-shadow:none;text-decoration:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#296169}.feature-round{color:#000;background:#fff;background:rgba(255,255,255,0.7);font-size:12px;width:100px;height:100px;line-height:14px;text-align:center;text-decoration:none;box-sizing:border-box;padding:35px 35px 35px 35px;background-color:transparent;border-radius:50px 50px 50px 50px;border-width:0px;border-color:#000000;border-style:none}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}</style>
+		<!-- REVOLUTION JS FILES -->
+		<script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+
+		<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+		<script type="text/javascript" src="js/extensions/revolution.extension.actions.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.carousel.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.kenburn.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.layeranimation.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.migration.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.navigation.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.parallax.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.slideanims.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.video.min.js"></script>
+	</head>
+	
+	<body>
+			
+
+<div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="m-audio" style="background-color:#000000;padding:0px;">
+<!-- START REVOLUTION SLIDER 5.1.6 fullscreen mode -->
+	<div id="rev_slider_2_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.1.6">
+<ul>	<!-- SLIDE  -->
+    <li data-index="rs-59" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="assets/5099d-neil-1.png"  data-rotate="0"  data-saveperformance="off"  data-title="Neil Davidge" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="assets/5099d-neil-1.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- BACKGROUND VIDEO LAYER -->
+		<div class="rs-background-video-layer" 
+			data-forcerewind="on" 
+			data-volume="mute" 
+			data-videowidth="100%" 
+			data-videoheight="100%" 
+			data-videomp4="assets/Neil-Trim.mp4" 
+			data-videopreload="preload" 
+			data-videoloop="loop" 
+			data-forceCover="1" 
+			data-aspectratio="16:9" 
+			data-autoplay="true" 
+			data-autoplayonlyfirsttime="false" 
+			data-nextslideatend="true" 
+		></div>
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption tp-shape tp-shapewrapper " 
+			 id="slide-59-layer-1" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['-11','-11','0','0']" 
+						data-width="full"
+			data-height="full"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:1000;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:1000;s:1000;" 
+			data-start="0" 
+			data-basealign="slide" 
+			data-responsive_offset="off" 
+			data-responsive="off"
+			
+			style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 0);"> 
+		</div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption Concept-SubTitle   tp-resizeme rs-parallaxlevel-2" 
+			 id="slide-59-layer-4" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['-84','-65','-57','-54']" 
+						data-fontsize="['25','25','20','20']"
+			data-lineheight="['25','25','20','20']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;" 
+			data-start="1500" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 6; white-space: nowrap;font-style:italic;">M-Audio Code Series Keyboards 
+		</div>
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-caption Concept-Title   tp-resizeme rs-parallaxlevel-2" 
+			 id="slide-59-layer-2" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['-25','0','0','0']" 
+						data-fontsize="['70','70','50','40']"
+			data-lineheight="['70','70','50','40']"
+			data-fontweight="['300','700','700','700']"
+			data-width="['none','none','none','400']"
+			data-height="none"
+			data-whitespace="['nowrap','nowrap','nowrap','normal']"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;" 
+			data-start="1700" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 7; white-space: nowrap; font-weight: 300;font-family:Lato;text-align:center;">Neil Davidge 
+		</div>
+
+		<!-- LAYER NR. 4 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-59-layer-13" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['446','446','446','446']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;e:Power3.easeIn;s:300;e:Power3.easeIn;" 
+			data-start="2300" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 8; white-space: nowrap; font-size: 22px; line-height: 22px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Lato;">(Massive Attack / Halo 4) 
+		</div>
+
+		<!-- LAYER NR. 5 -->
+		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-2" 
+			 id="slide-59-layer-5" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['50','50','43','39']" 
+						data-width="80"
+			data-height="2"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;s:1500;e:Power3.easeOut;" 
+			 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;" 
+			 data-mask_in="x:[-100%];y:0;s:inherit;e:inherit;" 
+			data-start="1900" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 9;background-color:rgba(255, 255, 255, 1.00);border-color:rgba(0, 0, 0, 0.50);"> 
+		</div>
+
+		<!-- LAYER NR. 6 -->
+		<div class="tp-caption Concept-MoreBtn rev-btn  rs-parallaxlevel-2" 
+			 id="slide-59-layer-7" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['502','452','541','417']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+				data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+				data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(255, 255, 255, 0.15);"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:2;" 
+			data-start="2100" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-actions='[{"event":"click","action":"startlayer","layer":"slide-59-layer-6","delay":""},{"event":"click","action":"startlayer","layer":"slide-59-layer-8","delay":""},{"event":"click","action":"stoplayer","layer":"slide-59-layer-7","delay":""},{"event":"click","action":"startlayer","layer":"slide-59-layer-9","delay":""},{"event":"click","action":"startlayer","layer":"slide-59-layer-10","delay":""},{"event":"click","action":"startlayer","layer":"slide-59-layer-11","delay":""},{"event":"click","action":"stoplayer","layer":"slide-59-layer-12","delay":""}]'
+			data-responsive_offset="on" 
+			data-responsive="off"
+			 data-end="bytrigger"
+			data-lasttriggerstate="reset"
+			style="z-index: 10; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><i class="pe-7s-plus"></i> 
+		</div>
+
+		<!-- LAYER NR. 7 -->
+		<div class="tp-caption Concept-Notice   rs-parallaxlevel-2" 
+			 id="slide-59-layer-12" 
+			 data-x="['center','center','center','center']" data-hoffset="['1','1','1','1']" 
+			 data-y="['top','top','top','top']" data-voffset="['548','497','606','484']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:300;" 
+			data-start="2300" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+			data-responsive="off"
+			 data-end="bytrigger"
+			data-lasttriggerstate="reset"
+			style="z-index: 11; white-space: nowrap;text-align:center;">
+				<div class="rs-looped rs-slideloop"  data-easing="Power1.easeInOut" data-speed="1" data-xs="0" data-xe="0" data-ys="10" data-ye="0"><i style="font-size:30px;" class="pe-7s-angle-up"></i><br/>CLICK ME 
+				</div>
+		</div>
+
+		<!-- LAYER NR. 8 -->
+		<div class="tp-caption tp-shape tp-shapewrapper " 
+			 id="slide-59-layer-9" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+						data-width="full"
+			data-height="full"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:800;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:1200;e:Power2.easeIn;s:1200;e:Power2.easeIn;" 
+			data-start="bytrigger" 
+			data-basealign="slide" 
+			data-responsive_offset="off" 
+			data-responsive="off"
+			 data-end="bytrigger"
+			data-lasttriggerstate="reset"
+			style="z-index: 12;background-color:rgba(0, 0, 0, 0.85);border-color:rgba(0, 0, 0, 0);"> 
+		</div>
+
+		<!-- LAYER NR. 9 -->
+		<div class="tp-caption Concept-Content   tp-resizeme rs-parallaxlevel-2" 
+			 id="slide-59-layer-6" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['630','550','520','390']" 
+						data-fontweight="['300','400','400','400']"
+			data-width="['643','800','480','400']"
+			data-height="['123','none','none','none']"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:700;e:Power3.easeInOut;" 
+			data-start="bytrigger" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			 data-end="bytrigger"
+			data-lasttriggerstate="reset"
+			style="z-index: 13; min-width: 643px; max-width: 643px; max-width: 123px; max-width: 123px; white-space: normal; font-weight: 300;font-family:Lato;text-align:center;">M-Audio visits Neil Davidge and takes a tour through his hometown in Bristol, UK. We chat about our latest M-Audio Code Series keyboard, the music creation process, films/game scores, his history with Massive Attack <br>and his latest album and film score for the Slo Light Film. 
+		</div>
+
+		<!-- LAYER NR. 10 -->
+		<div class="tp-caption   tp-resizeme tp-videolayer" 
+			 id="slide-59-layer-10" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['231','150','200','150']" 
+						data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:700;e:Power3.easeInOut;" 
+			data-start="bytrigger" 
+			data-responsive_offset="on" 
+
+			 data-ytid="797PQQu8Cd8" data-videoattributes="version=3&amp;enablejsapi=1&amp;html5=1&amp;volume=100&title=0&byline=0&portrait=0&api=1;origin=http://localhost;" data-videorate="1" data-videowidth="['640px','640px','480px','360px']" data-videoheight="['360px','360px','270px','203px']" data-videocontrols="controls" data-videoloop="none" data-end="bytrigger"
+			data-lasttriggerstate="reset"			data-autoplay="off" 
+			data-volume="100"
+			style="z-index: 14;"> 
+		</div>
+
+		<!-- LAYER NR. 11 -->
+		<div class="tp-caption Concept-Title   tp-resizeme" 
+			 id="slide-59-layer-11" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['150','70','120','40']" 
+						data-fontweight="['400','700','700','700']"
+			data-width="['none','none','none','400']"
+			data-height="none"
+			data-whitespace="['nowrap','nowrap','nowrap','normal']"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:700;" 
+			data-start="bytrigger" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			 data-end="bytrigger"
+			data-lasttriggerstate="reset"
+			style="z-index: 15; white-space: nowrap; font-size: 40px; line-height: 40px; font-weight: 400;font-family:Lato;text-align:center;">Neil Davidge 
+		</div>
+
+		<!-- LAYER NR. 12 -->
+		<div class="tp-caption Concept-LessBtn rev-btn " 
+			 id="slide-59-layer-8" 
+			 data-x="['right','right','right','right']" data-hoffset="['30','30','5','5']" 
+			 data-y="['top','top','top','top']" data-voffset="['30','30','5','5']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+				data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+				data-style_hover="c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:2;" 
+			data-start="bytrigger" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-actions='[{"event":"click","action":"stoplayer","layer":"slide-59-layer-6","delay":""},{"event":"click","action":"startlayer","layer":"slide-59-layer-7","delay":""},{"event":"click","action":"stoplayer","layer":"slide-59-layer-8","delay":""},{"event":"click","action":"stoplayer","layer":"slide-59-layer-9","delay":""},{"event":"click","action":"stoplayer","layer":"slide-59-layer-10","delay":""},{"event":"click","action":"stopvideo","layer":"slide-59-layer-10","delay":""},{"event":"click","action":"stoplayer","layer":"slide-59-layer-11","delay":""}]'
+			data-basealign="slide" 
+			data-responsive_offset="off" 
+			data-responsive="off"
+			 data-end="bytrigger"
+			data-lasttriggerstate="reset"
+			style="z-index: 16; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><i class="pe-7s-close-circle"></i> 
+		</div>
+	</li>
+	<!-- SLIDE  -->
+    <li data-index="rs-61" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="assets/0c159-ctrl.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="CTRL49" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="assets/0c159-ctrl.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+	</li>
+	<!-- SLIDE  -->
+    <li data-index="rs-60" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="assets/5f4fd-jav-4.png"  data-rotate="0"  data-saveperformance="off"  data-title="Javelin" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="assets/5f4fd-jav-4.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- BACKGROUND VIDEO LAYER -->
+		<div class="rs-background-video-layer" 
+			data-forcerewind="on" 
+			data-volume="mute" 
+			data-videowidth="100%" 
+			data-videoheight="100%" 
+			data-videomp4="assets/javelin-trim.mp4" 
+			data-videopreload="preload" 
+			data-videoloop="loop" 
+			data-forceCover="1" 
+			data-aspectratio="16:9" 
+			data-autoplay="true" 
+			data-autoplayonlyfirsttime="false" 
+			data-nextslideatend="true" 
+		></div>
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption tp-shape tp-shapewrapper " 
+			 id="slide-60-layer-1" 
+			 data-x="['center','center','center','center']" data-hoffset="['-1','-1','0','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['-11','-11','0','0']" 
+						data-width="full"
+			data-height="full"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:1000;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:1000;s:1000;" 
+			data-start="0" 
+			data-basealign="slide" 
+			data-responsive_offset="off" 
+			data-responsive="off"
+			
+			style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 0);"> 
+		</div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption Concept-SubTitle   tp-resizeme rs-parallaxlevel-2" 
+			 id="slide-60-layer-4" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['-84','-65','-57','-54']" 
+						data-fontsize="['25','25','20','20']"
+			data-lineheight="['25','25','20','20']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;" 
+			data-start="1500" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 6; white-space: nowrap;font-style:italic;">M-Audio Code Series Keyboards 
+		</div>
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-caption Concept-Title   tp-resizeme rs-parallaxlevel-2" 
+			 id="slide-60-layer-2" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['-25','0','0','0']" 
+						data-fontsize="['70','70','50','40']"
+			data-lineheight="['70','70','50','40']"
+			data-fontweight="['300','700','700','700']"
+			data-width="['none','none','none','400']"
+			data-height="none"
+			data-whitespace="['nowrap','nowrap','nowrap','normal']"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;" 
+			data-start="1700" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 7; white-space: nowrap; font-weight: 300;font-family:Lato;text-align:center;">Javelin 
+		</div>
+
+		<!-- LAYER NR. 4 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-60-layer-13" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['441','441','441','441']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:300;e:Power3.easeIn;s:300;e:Power3.easeIn;" 
+			data-start="2300" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 8; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255, 255, 255, 1.00);"> 
+		</div>
+
+		<!-- LAYER NR. 5 -->
+		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-2" 
+			 id="slide-60-layer-5" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['50','50','43','39']" 
+						data-width="80"
+			data-height="2"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;s:1500;e:Power3.easeOut;" 
+			 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;" 
+			 data-mask_in="x:[-100%];y:0;s:inherit;e:inherit;" 
+			data-start="1900" 
+			data-responsive_offset="on" 
+
+			
+			style="z-index: 9;background-color:rgba(255, 255, 255, 1.00);border-color:rgba(0, 0, 0, 0.50);"> 
+		</div>
+
+		<!-- LAYER NR. 6 -->
+		<div class="tp-caption Concept-MoreBtn rev-btn  rs-parallaxlevel-2" 
+			 id="slide-60-layer-7" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['502','452','541','417']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+				data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+				data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(255, 255, 255, 0.15);"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:2;" 
+			data-start="2100" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-actions='[{"event":"click","action":"startlayer","layer":"slide-60-layer-6","delay":""},{"event":"click","action":"startlayer","layer":"slide-60-layer-8","delay":""},{"event":"click","action":"stoplayer","layer":"slide-60-layer-7","delay":""},{"event":"click","action":"startlayer","layer":"slide-60-layer-9","delay":""},{"event":"click","action":"startlayer","layer":"slide-60-layer-10","delay":""},{"event":"click","action":"startlayer","layer":"slide-60-layer-11","delay":""},{"event":"click","action":"stoplayer","layer":"slide-60-layer-12","delay":""}]'
+			data-responsive_offset="on" 
+			data-responsive="off"
+			 data-end="bytrigger"
+			data-lasttriggerstate="reset"
+			style="z-index: 10; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><i class="pe-7s-plus"></i> 
+		</div>
+
+		<!-- LAYER NR. 7 -->
+		<div class="tp-caption Concept-Notice   rs-parallaxlevel-2" 
+			 id="slide-60-layer-12" 
+			 data-x="['center','center','center','center']" data-hoffset="['1','1','1','1']" 
+			 data-y="['top','top','top','top']" data-voffset="['548','497','606','484']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:300;" 
+			data-start="2300" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+			data-responsive="off"
+			 data-end="bytrigger"
+			data-lasttriggerstate="reset"
+			style="z-index: 11; white-space: nowrap;text-align:center;">
+				<div class="rs-looped rs-slideloop"  data-easing="Power1.easeInOut" data-speed="1" data-xs="0" data-xe="0" data-ys="10" data-ye="0"><i style="font-size:30px;" class="pe-7s-angle-up"></i><br/>CLICK ME 
+				</div>
+		</div>
+
+		<!-- LAYER NR. 8 -->
+		<div class="tp-caption tp-shape tp-shapewrapper " 
+			 id="slide-60-layer-9" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+						data-width="full"
+			data-height="full"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="opacity:0;s:800;e:Power2.easeInOut;" 
+			 data-transform_out="opacity:0;s:1200;e:Power2.easeIn;s:1200;e:Power2.easeIn;" 
+			data-start="bytrigger" 
+			data-basealign="slide" 
+			data-responsive_offset="off" 
+			data-responsive="off"
+			 data-end="bytrigger"
+			data-lasttriggerstate="reset"
+			style="z-index: 12;background-color:rgba(0, 0, 0, 0.85);border-color:rgba(0, 0, 0, 0);"> 
+		</div>
+
+		<!-- LAYER NR. 9 -->
+		<div class="tp-caption Concept-Content   tp-resizeme rs-parallaxlevel-2" 
+			 id="slide-60-layer-6" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['630','550','520','390']" 
+						data-fontweight="['300','400','400','400']"
+			data-width="['643','800','480','400']"
+			data-height="['123','none','none','none']"
+			data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:700;e:Power3.easeInOut;" 
+			data-start="bytrigger" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			 data-end="bytrigger"
+			data-lasttriggerstate="reset"
+			style="z-index: 13; min-width: 643px; max-width: 643px; max-width: 123px; max-width: 123px; white-space: normal; font-weight: 300;font-family:Lato;text-align:center;">M-Audio visits Javelin (Tom Van Buskirk & George Langford). We jam with the band, chat about our latest M-Audio Code Series keyboards, discover and learn about their music creation process, and what the guys are up to next! 
+		</div>
+
+		<!-- LAYER NR. 10 -->
+		<div class="tp-caption   tp-resizeme tp-videolayer" 
+			 id="slide-60-layer-10" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['231','150','200','150']" 
+						data-whitespace="normal"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:700;e:Power3.easeInOut;" 
+			data-start="bytrigger" 
+			data-responsive_offset="on" 
+
+			 data-ytid="VjJtQuOhUnk" data-videoattributes="version=3&amp;enablejsapi=1&amp;html5=1&amp;volume=100&title=0&byline=0&portrait=0&api=1;origin=http://localhost;" data-videorate="1" data-videowidth="['640px','640px','480px','360px']" data-videoheight="['360px','360px','270px','203px']" data-videocontrols="controls" data-videoloop="none" data-end="bytrigger"
+			data-lasttriggerstate="reset"			data-autoplay="off" 
+			data-nextslideatend="true" 
+			data-volume="100"			data-stopallvideos="true" 
+			data-allowfullscreenvideo="true" 
+
+			style="z-index: 14;"> 
+		</div>
+
+		<!-- LAYER NR. 11 -->
+		<div class="tp-caption Concept-Title   tp-resizeme" 
+			 id="slide-60-layer-11" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['150','70','120','40']" 
+						data-fontweight="['400','700','700','700']"
+			data-width="['none','none','none','400']"
+			data-height="none"
+			data-whitespace="['nowrap','nowrap','nowrap','normal']"
+			data-transform_idle="o:1;"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:700;" 
+			data-start="bytrigger" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+
+			 data-end="bytrigger"
+			data-lasttriggerstate="reset"
+			style="z-index: 15; white-space: nowrap; font-size: 40px; line-height: 40px; font-weight: 400;font-family:Lato;text-align:center;">Javelin 
+		</div>
+
+		<!-- LAYER NR. 12 -->
+		<div class="tp-caption Concept-LessBtn rev-btn " 
+			 id="slide-60-layer-8" 
+			 data-x="['right','right','right','right']" data-hoffset="['30','30','5','5']" 
+			 data-y="['top','top','top','top']" data-voffset="['30','30','5','5']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+				data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+				data-style_hover="c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);"
+ 
+			 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;" 
+			 data-transform_out="auto:auto;s:2;" 
+			data-start="bytrigger" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-actions='[{"event":"click","action":"stoplayer","layer":"slide-60-layer-6","delay":""},{"event":"click","action":"startlayer","layer":"slide-60-layer-7","delay":""},{"event":"click","action":"stoplayer","layer":"slide-60-layer-8","delay":""},{"event":"click","action":"stoplayer","layer":"slide-60-layer-9","delay":""},{"event":"click","action":"stoplayer","layer":"slide-60-layer-10","delay":""},{"event":"click","action":"stopvideo","layer":"slide-60-layer-10","delay":""},{"event":"click","action":"stoplayer","layer":"slide-60-layer-11","delay":""}]'
+			data-basealign="slide" 
+			data-responsive_offset="off" 
+			data-responsive="off"
+			 data-end="bytrigger"
+			data-lasttriggerstate="reset"
+			style="z-index: 16; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><i class="pe-7s-close-circle"></i> 
+		</div>
+	</li>
+	<!-- SLIDE  -->
+    <li data-index="rs-62" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="assets/09500-m-track.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="M-Track Series" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="assets/09500-m-track.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+	</li>
+</ul>
+<div class="tp-static-layers">
+</div>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+</div><!-- END REVOLUTION SLIDER -->
+		<script type="text/javascript">
+						var tpj=jQuery;
+			
+			var revapi2;
+			tpj(document).ready(function() {
+				if(tpj("#rev_slider_2_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_2_1");
+				}else{
+					revapi2 = tpj("#rev_slider_2_1").show().revolution({
+						sliderType:"standard",
+jsFileLocation:"//localhost:8888/revslider/public/assets/js/",
+						sliderLayout:"fullscreen",
+						dottedOverlay:"none",
+						delay:7000,
+						navigation: {
+							keyboardNavigation:"off",
+							keyboard_direction: "horizontal",
+							mouseScrollNavigation:"off",
+							onHoverStop:"on",
+							touch:{
+								touchenabled:"on",
+								swipe_threshold: 75,
+								swipe_min_touches: 50,
+								swipe_direction: "horizontal",
+								drag_block_vertical: false
+							}
+							,
+							arrows: {
+								style:"hermes",
+								enable:true,
+								hide_onmobile:true,
+								hide_under:800,
+								hide_onleave:false,
+								tmp:'<div class="tp-arr-allwrapper">	<div class="tp-arr-imgholder"></div>	<div class="tp-arr-titleholder">{{title}}</div>	</div>',
+								left: {
+									h_align:"left",
+									v_align:"center",
+									h_offset:0,
+									v_offset:0
+								},
+								right: {
+									h_align:"right",
+									v_align:"center",
+									h_offset:0,
+									v_offset:0
+								}
+							}
+							,
+							bullets: {
+								enable:true,
+								hide_onmobile:true,
+								hide_under:800,
+								style:"zeus",
+								hide_onleave:false,
+								direction:"horizontal",
+								h_align:"center",
+								v_align:"bottom",
+								h_offset:0,
+								v_offset:30,
+								space:5,
+								tmp:'<span class="tp-bullet-image"></span><span class="tp-bullet-imageoverlay"></span><span class="tp-bullet-title">{{title}}</span>'
+							}
+						},
+						responsiveLevels:[1240,1024,778,480],
+						visibilityLevels:[1240,1024,778,480],
+						gridwidth:[1240,1024,778,480],
+						gridheight:[868,768,960,720],
+						lazyType:"none",
+						parallax: {
+							type:"scroll",
+							origo:"slidercenter",
+							speed:1000,
+							levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,100,55],
+							type:"scroll",
+						},
+						shadow:0,
+						spinner:"off",
+						stopLoop:"off",
+						stopAfterLoops:-1,
+						stopAtSlide:-1,
+						shuffle:"off",
+						autoHeight:"off",
+						fullScreenAutoWidth:"off",
+						fullScreenAlignForce:"off",
+						fullScreenOffsetContainer: "",
+						fullScreenOffset: "60px",
+						disableProgressBar:"on",
+						hideThumbsOnMobile:"off",
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						debugMode:false,
+						fallbacks: {
+							simplifyAll:"off",
+							nextSlideOnWindowFocus:"off",
+							disableFocusListener:false,
+						}
+					});
+				}
+			});	/*ready*/
+		</script>
+		
+
+		</body>
+</html>
