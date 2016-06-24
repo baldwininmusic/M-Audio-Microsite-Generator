@@ -11,8 +11,6 @@
       <!-- Generate using http://realfavicongenerator.net/ -->
       <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
       <link rel="icon" href="images/favicons/favicon.ico">
-      
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
@@ -33,6 +31,7 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
   </head>
   <body>
     <!--[if lt IE 10]>
