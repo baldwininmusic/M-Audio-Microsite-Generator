@@ -9,17 +9,6 @@
     align-items: center;
     flex-direction: column;
     border-top: 1px solid $m-audio-orange;
-
-    .ion {
-      padding-top: 20px;
-      font-size: 2em;
-      padding-right: 10px;
-      color: $m-audio-orange;
-
-      &:hover {
-        color: #444;
-      }
-    }
   } /* footer */
 
 .footer-logo-wrapper {
@@ -45,6 +34,7 @@
     display: inline-block;
     color: $m-audio-orange;
     padding-right: 5px;
+    font-size: 1.5rem;
   }
 }
 
