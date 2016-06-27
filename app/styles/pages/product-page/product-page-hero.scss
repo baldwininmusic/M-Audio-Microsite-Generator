@@ -64,6 +64,53 @@
       color: $m-audio-slate;
     }
 
+    /*Slick Carousel Settings
+    ========================= */
+
+    .slick-prev {
+      z-index: 999;
+      left: 0;
+      // border: 3px solid red;
+    }
+
+    .slick-next {
+      right: 0;
+      // border: 3px solid red;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+      font-size: 25px;
+    }
+
+    .slick-center .cat-container-overlay{
+      display: none;
+    }
+
+    .slick-dots button:before {
+      color: #444 !important;
+    }
+
+    .find-dealer-left-bracket,
+    .buy-online-left-bracket {
+      padding-right: 5px;
+      color: $m-audio-slate;
+    }
+
+    .find-dealer-right-bracket,
+    .buy-online-right-bracket {
+      padding-left: 5px;
+      color: $m-audio-slate;
+    }
+
+    .find-dealer-left-bracket,
+    .buy-online-left-bracket,
+    .find-dealer-right-bracket,
+    .buy-online-right-bracket {
+      display: none;
+    }
+
   } /* section#product-page-hero */
 
 

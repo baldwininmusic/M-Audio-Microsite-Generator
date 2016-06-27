@@ -142,6 +142,19 @@ $(function() {
       cssEase: 'linear'
     });
 
+  // Product Page Hero Btn Hover SCRIPTS
+    $('.find-a-dealer-btn').on('mouseenter', function() {
+      $('.find-dealer-left-bracket, .find-dealer-right-bracket').show();
+    }).on('mouseleave', function() {
+      $('.find-dealer-left-bracket, .find-dealer-right-bracket').hide();
+    });
+
+    $('.buy-online-btn').on('mouseenter', function() {
+      $('.buy-online-left-bracket, .buy-online-right-bracket').show();
+    }).on('mouseleave', function() {
+      $('.buy-online-left-bracket, .buy-online-right-bracket').hide();
+    });
+
 // PRODUCT PAGE STICKY NAV LINKS SCRIPTS
 
   // PREVENT LINK GOING TO TOP OF PAGE

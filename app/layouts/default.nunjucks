@@ -12,6 +12,10 @@
       <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
       <link rel="icon" href="images/favicons/favicon.ico">
 
+    <!-- Adobe TypKit Futura-PT Font -->
+    <script src="https://use.typekit.net/swp5rja.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
 
