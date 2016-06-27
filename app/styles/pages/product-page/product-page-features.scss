@@ -15,7 +15,7 @@
     // padding: 0 0 2% 0;
 
     h4 {
-      // font-family: $font-pn-light;
+      color: $m-audio-slate;
     }
 
     .product-page-features-section-header {
@@ -42,7 +42,8 @@
 
       li {
         padding: 1% 0;
-        border-bottom: 1px solid $m-audio-slate;
+        color: $m-audio-text;
+        // border-bottom: 1px solid $m-audio-slate;
       }
     }
 
@@ -57,7 +58,8 @@
 
       li {
         padding: 1% 0;
-        border-bottom: 1px solid $m-audio-slate;
+        color: $m-audio-text;
+        // border-bottom: 1px solid $m-audio-slate;
       }
     }
   } /* section#product-page-overview */
