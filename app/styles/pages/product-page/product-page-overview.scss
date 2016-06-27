@@ -4,6 +4,8 @@
 
   section#product-page-overview {
     // padding-top: 5%;
+    // background: #f5f5f5;
+    // border: 5px solid purple;
 
     h4 {
       // font-family: $font-pn-light;
@@ -11,6 +13,7 @@
 
     p {
       color: $m-audio-text;
+      word-wrap: break-word;
     }
 
     .product-page-overview-section-header {

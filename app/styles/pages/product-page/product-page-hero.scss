@@ -3,6 +3,8 @@
 ************************************************/
 
   section#product-page-hero {
+    padding-top: 80px;
+    // border: 5px solid green;
 
     .product-page-hero-container {
       padding-top: 80px;
@@ -37,10 +39,11 @@
         padding: 20px 0;
         width: 40%;
         text-align: center;
+        letter-spacing: 2px;
         // border: 5px solid pink;
 
         h6 {
-          font-family: $font-secondary;
+          // font-family: $font-secondary;
           color: #77777B;
         }
       } /* product-page-name-sub-header */
@@ -52,17 +55,7 @@
 
     } /* product-page-hero-text-wrapper */
 
-    .find-a-dealer-btn,
-    .buy-online-btn {
-      font-family: $font-secondary;
-      background: #F5F5F5;
-      margin-bottom: 15px;
-      padding: 10px;
-    }
 
-    .buy-online-brackets {
-      color: $m-audio-slate;
-    }
 
     /*Slick Carousel Settings
     ========================= */
@@ -90,6 +83,28 @@
 
     .slick-dots button:before {
       color: #444 !important;
+    }
+
+    /* Hero Buttons
+    ======================== */
+
+    .product-page-buttons-container {
+    }
+
+    .find-a-dealer-btn,
+    .buy-online-btn {
+      font-family: $font-secondary;
+      background: #F5F5F5;
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+
+    .find-a-dealer-btn {
+      margin-right: 10px;
+    }
+
+    .buy-online-btn {
+      padding: 10px 26px;
     }
 
     .find-dealer-left-bracket,

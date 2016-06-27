@@ -20,8 +20,9 @@ nav#jet-navigation {
 
   .nav-li-span-dropdowns {
     padding: 40px 10px;
-    font-family: $font-secondary;
+    // font-family: $font-secondary;
     font-size: 1rem;
+    letter-spacing: 2px;
   }
 
   .jetmenu > li:hover > a, .jetmenu > li.active > a {
