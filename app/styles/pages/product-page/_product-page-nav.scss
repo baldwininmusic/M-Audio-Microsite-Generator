@@ -3,10 +3,10 @@
 ************************************************/
 
   nav#product-page-nav {
-    margin-top: 10%;
+    margin-top: 5%;
 
     a {
-      color: $m-audio-orange;
+      color: #CBC8C7;
     }
 
     h4 {
@@ -29,16 +29,50 @@
       // border: 5px solid red;
 
       ul {
-        margin-right: 20px;
+        // padding-right: 20px;
         list-style: none;
+        margin: 0;
         // border: 5px solid red;
 
         li {
-          margin-right: 10px;
-          font-weight: 700;
+          padding-top: 5px;
+          font-weight: 400;
           display: inline-block;
+          // border: 2px solid green;
         }
       }
     } /* product-page-nav-container */
+
+    .product-overview {
+      padding: 0 40px;
+      border-top: 5px solid #C1CED6;
+    }
+
+    .product-features {
+      padding: 0 20px;
+      margin-left: -5px;
+      border-top: 5px solid #839FAE;
+    }
+
+    .product-media {
+      padding: 0 40px;
+      margin-left: -5px;
+      border-top: 5px solid #808285;
+    }
+
+    .product-page-nav-left-bracket {
+      padding-right: 10px;
+    }
+
+    .product-page-nav-right-bracket {
+      padding-left: 10px;
+    }
+
+    .features-left-bracket,
+    .media-left-bracket,
+    .features-right-bracket,
+    .media-right-bracket {
+      display: none;
+    }
 
   } /* nav#product-page */

@@ -5,7 +5,7 @@
   section#product-page-hero {
 
     .product-page-hero-container {
-      margin-top: 80px;
+      padding-top: 80px;
       // width: 50%;
       // border: 5px solid green;
     }
@@ -16,10 +16,17 @@
 
     h1 {
       margin: 0;
+      color: #AAA9A7;
+      font-size: 5rem;
+      border-bottom: 3px solid #AAA9A7;
     }
 
     .product-page-hero-text-wrapper {
       margin-top: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       // border: 5px solid red;
 
       .product-page-name-header {
@@ -27,7 +34,15 @@
       } /* product-page-name-header */
 
       .product-page-name-sub-header {
+        padding: 20px 0;
+        width: 40%;
+        text-align: center;
         // border: 5px solid pink;
+
+        h6 {
+          font-family: $font-secondary;
+          color: #77777B;
+        }
       } /* product-page-name-sub-header */
 
       .product-page-name-hero-copy {
@@ -35,24 +50,19 @@
         // border: 5px solid gold;
       } /* product-page-name-hero-copy */
 
-      .product-buy-now-btn,
-      .product-find-a-dealer-btn {
-        border: 1px solid #444;
-        margin-right: 15px;
-        padding: 1% 2%;
-        width: 20%;
-        text-align: center;
-        display: inline-block;
-        transition: all 0.3s;
-
-        &:hover {
-          transition: all 0.3s;
-          color: darken($m-audio-slate, 20%);
-          border: 1px solid $m-audio-orange;
-        }
-      }
-
     } /* product-page-hero-text-wrapper */
+
+    .find-a-dealer-btn,
+    .buy-online-btn {
+      font-family: $font-secondary;
+      background: #F5F5F5;
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+
+    .buy-online-brackets {
+      color: $m-audio-slate;
+    }
 
   } /* section#product-page-hero */
 

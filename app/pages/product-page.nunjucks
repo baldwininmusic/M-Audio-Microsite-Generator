@@ -12,7 +12,7 @@
   {% include "templates/product-page/product-page-features.html" %}
   {% include "templates/product-page/product-page-requirements.html" %}
   {% include "templates/product-page/product-page-media.html" %}
-  {% include "templates/product-page/product-page-downloads.html" %}
+  {# include "templates/product-page/product-page-downloads.html" #}
 
   {% include "templates/_partials/footer.html" %}
 {% endblock %}

@@ -149,6 +149,28 @@ $(function() {
       e.preventDefault();
     });
 
+  // Add Brackets on active LINK
+    $('#product-overview').on('click', function() {
+      $('.product-page-nav-left-bracket').hide();
+      $('.product-page-nav-right-bracket').hide();
+      $('.overview-left-bracket').show();
+      $('.overview-right-bracket').show();
+    });
+    $('#product-features').on('click', function() {
+      $('.product-page-nav-left-bracket').hide();
+      $('.product-page-nav-right-bracket').hide();
+      $('.features-left-bracket').show();
+      $('.features-right-bracket').show();
+    });
+    $('#product-media').on('click', function() {
+      $('.product-page-nav-left-bracket').hide();
+      $('.product-page-nav-right-bracket').hide();
+      $('.media-left-bracket').show();
+      $('.media-right-bracket').show();
+    });
+
+
+
     $('#product-page-features').hide();
     $('#product-page-requirements').hide();
     $('#product-page-media').hide();

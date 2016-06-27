@@ -34,7 +34,22 @@
     }
 
     .product-page-features-container {
-      padding: 5%;
+      padding-top: 5%;
+
+      ul {
+        list-style: none;
+      }
+
+      li {
+        padding: 1% 0;
+        border-bottom: 1px solid $m-audio-slate;
+      }
+    }
+
+
+    .product-page-requirements-container,
+    .product-page-specs-container {
+      padding-top: 3%;
 
       ul {
         list-style: none;

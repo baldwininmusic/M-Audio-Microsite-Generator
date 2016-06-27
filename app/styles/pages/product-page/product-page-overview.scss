@@ -13,17 +13,13 @@
       text-align: center;
       position: relative;
       // border: 2px solid purple;
-
-      h4 {
-        z-index: 99;
-        width: 15%;
-        margin: 0 auto;
-        background: #fff;
-        // border: 2px solid green;
-      }
     }
 
     .product-page-overview-container {
       padding: 5%;
+
+      strong {
+        color: $m-audio-slate;
+      }
     }
   } /* section#product-page-overview */
