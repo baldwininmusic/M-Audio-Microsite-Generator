@@ -293,47 +293,47 @@ $(function() {
 
     // Artist #2
     $('.artist-2-overlay-container').on('mouseenter', function() {
-      $('.artist-2-overlay-container').addClass('m-audio-artists-overlay-container-hover');
+      $('.artist-2-overlay-container').addClass('artist-2-overlay-container-hover');
       $('.artist-2-copy-wrapper').addClass('m-audio-artists-overlay-copy-wrapper-hover');
     }).on('mouseleave', function() {
-      $('.m-audio-artists-overlay-container').removeClass('m-audio-artists-overlay-container-hover');
+      $('.m-audio-artists-overlay-container').removeClass('artist-2-overlay-container-hover');
       $('.m-audio-artists-overlay-copy-wrapper').removeClass('m-audio-artists-overlay-copy-wrapper-hover');
     });
 
     // Artist #3
     $('.artist-3-overlay-container').on('mouseenter', function() {
-      $('.artist-3-overlay-container').addClass('m-audio-artists-overlay-container-hover');
+      $('.artist-3-overlay-container').addClass('artist-3-overlay-container-hover');
       $('.artist-3-copy-wrapper').addClass('m-audio-artists-overlay-copy-wrapper-hover');
     }).on('mouseleave', function() {
-      $('.m-audio-artists-overlay-container').removeClass('m-audio-artists-overlay-container-hover');
+      $('.m-audio-artists-overlay-container').removeClass('artist-3-overlay-container-hover');
       $('.m-audio-artists-overlay-copy-wrapper').removeClass('m-audio-artists-overlay-copy-wrapper-hover');
     });
 
 
     // Artist #4
     $('.artist-4-overlay-container').on('mouseenter', function() {
-      $('.artist-4-overlay-container').addClass('m-audio-artists-overlay-container-hover');
+      $('.artist-4-overlay-container').addClass('artist-4-overlay-container-hover');
       $('.artist-4-copy-wrapper').addClass('m-audio-artists-overlay-copy-wrapper-hover');
     }).on('mouseleave', function() {
-      $('.m-audio-artists-overlay-container').removeClass('m-audio-artists-overlay-container-hover');
+      $('.m-audio-artists-overlay-container').removeClass('artist-4-overlay-container-hover');
       $('.m-audio-artists-overlay-copy-wrapper').removeClass('m-audio-artists-overlay-copy-wrapper-hover');
     });
 
     // Artist #5
     $('.artist-5-overlay-container').on('mouseenter', function() {
-      $('.artist-5-overlay-container').addClass('m-audio-artists-overlay-container-hover');
+      $('.artist-5-overlay-container').addClass('artist-5-overlay-container-hover');
       $('.artist-5-copy-wrapper').addClass('m-audio-artists-overlay-copy-wrapper-hover');
     }).on('mouseleave', function() {
-      $('.m-audio-artists-overlay-container').removeClass('m-audio-artists-overlay-container-hover');
+      $('.m-audio-artists-overlay-container').removeClass('artist-5-overlay-container-hover');
       $('.m-audio-artists-overlay-copy-wrapper').removeClass('m-audio-artists-overlay-copy-wrapper-hover');
     });
 
     // Artist #6
     $('.artist-6-overlay-container').on('mouseenter', function() {
-      $('.artist-6-overlay-container').addClass('m-audio-artists-overlay-container-hover');
+      $('.artist-6-overlay-container').addClass('artist-6-overlay-container-hover');
       $('.artist-6-copy-wrapper').addClass('m-audio-artists-overlay-copy-wrapper-hover');
     }).on('mouseleave', function() {
-      $('.m-audio-artists-overlay-container').removeClass('m-audio-artists-overlay-container-hover');
+      $('.m-audio-artists-overlay-container').removeClass('artist-6-overlay-container-hover');
       $('.m-audio-artists-overlay-copy-wrapper').removeClass('m-audio-artists-overlay-copy-wrapper-hover');
     });
 
