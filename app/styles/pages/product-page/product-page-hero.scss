@@ -3,7 +3,8 @@
 ************************************************/
 
   section#product-page-hero {
-    padding-top: 80px;
+    // padding-top: 80px;
+    background: #fff;
     // border: 5px solid green;
 
     .product-page-hero-container {
@@ -12,19 +13,21 @@
       // border: 5px solid green;
     }
 
-    .product-carousel {
-      // border: 5px solid green;
+    button a {
+      color: #77777B;
     }
 
     h1 {
       margin: 0;
       color: #AAA9A7;
       font-size: 5rem;
+      font-family: $micro-grandma-thin;
       border-bottom: 3px solid #AAA9A7;
     }
 
     .product-page-hero-text-wrapper {
-      margin-top: 15%;
+      // margin-top: 15%;
+      height: 90vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -43,7 +46,6 @@
         // border: 5px solid pink;
 
         h6 {
-          // font-family: $font-secondary;
           color: #77777B;
         }
       } /* product-page-name-sub-header */
