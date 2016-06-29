@@ -1,0 +1,115 @@
+/*
+|--------------------------------------------------------------------------
+|                                 Artists Kristin
+|--------------------------------------------------------------------------
+*/
+
+  section#artists-kristin {
+    padding-top: 80px;
+    background: $m-audio-gray;
+
+    .columns {
+      padding: 0;
+    }
+  }
+
+  .m-audio-artists-gradient {
+    height: 10px;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  header.m-audio-artists {
+    text-align: center;
+    // border-top: 10px solid #ADC0CA;
+    // width: 50%;
+    // margin: 0 auto;
+
+    h6 {
+      padding-top: 10px;
+      padding-bottom: 40px;
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 5px;
+    }
+  }
+
+  .m-audio-artists-artist-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .m-audio-artists-overlay-container {
+    position: absolute;
+    background: rgba(85, 97, 107, 0.5);
+    // background: black;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: background .5s;
+    // border: 5px solid red;
+  }
+
+  .m-audio-artists-overlay-copy-wrapper {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 25%;
+    transition: all .5s ease-in-out;
+    transform: translateY(65%);
+    // border: 5px solid red;
+
+    h5 {
+      color: #fff;
+      font-family: $font-secondary;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .m-audio-artists-copy-gradient {
+      height: 2px;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    p {
+      color: #fff;
+      width: 50%;
+      font-size: .8rem;
+      margin: 0 auto;
+    }
+  } /* .m-audio-artists-overlay-copy-wrapper */
+
+  .m-audio-artists-overlay-container-hover {
+    background: transparent;
+    transition: background .5s;
+  }
+
+  .m-audio-artists-overlay-copy-wrapper-hover {
+    transition: all .5s ease-out;
+    transform: translateY(0%);
+    background: rgba(85, 97, 107, 0.8);
+  }
+
+
+
+
+.artists-gradient {
+    background-color: #92a4ae;
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjYzFjZWQ3IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM4MzlmYWUiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjUiLz48c3RvcCBzdG9wLWNvbG9yPSIjODA4Mjg1IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN2c2dnKSIgLz48L3N2Zz4=);
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 0%,color-stop(0, rgb(193, 206, 215)),color-stop(0.5, rgb(131, 159, 174)),color-stop(1, rgb(128, 130, 133)));
+    /* Android 2.3 */
+    background-image: -webkit-repeating-linear-gradient(left,rgb(193, 206, 215) 0%,rgb(131, 159, 174) 50%,rgb(128, 130, 133) 100%);
+    /* IE10+ */
+    background-image: repeating-linear-gradient(to right,rgb(193, 206, 215) 0%,rgb(131, 159, 174) 50%,rgb(128, 130, 133) 100%);
+    background-image: -ms-repeating-linear-gradient(left,rgb(193, 206, 215) 0%,rgb(131, 159, 174) 50%,rgb(128, 130, 133) 100%);
+}
+
+/* IE8- CSS hack */
+@media \0screen\,screen\9 {
+    .artists-gradient {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc1ced7",endColorstr="#ff808285",GradientType=1);
+    }
+}

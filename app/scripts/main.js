@@ -281,6 +281,61 @@ $(function() {
       $('.artists-hover-div').hide();
     });
 
+  // Artists Page SCRIPTS
+    // Artist #1
+    $('.artist-1-overlay-container').on('mouseenter', function() {
+      $('.artist-1-overlay-container').addClass('m-audio-artists-overlay-container-hover');
+      $('.artist-1-copy-wrapper').addClass('m-audio-artists-overlay-copy-wrapper-hover');
+    }).on('mouseleave', function() {
+      $('.m-audio-artists-overlay-container').removeClass('m-audio-artists-overlay-container-hover');
+      $('.m-audio-artists-overlay-copy-wrapper').removeClass('m-audio-artists-overlay-copy-wrapper-hover');
+    });
+
+    // Artist #2
+    $('.artist-2-overlay-container').on('mouseenter', function() {
+      $('.artist-2-overlay-container').addClass('m-audio-artists-overlay-container-hover');
+      $('.artist-2-copy-wrapper').addClass('m-audio-artists-overlay-copy-wrapper-hover');
+    }).on('mouseleave', function() {
+      $('.m-audio-artists-overlay-container').removeClass('m-audio-artists-overlay-container-hover');
+      $('.m-audio-artists-overlay-copy-wrapper').removeClass('m-audio-artists-overlay-copy-wrapper-hover');
+    });
+
+    // Artist #3
+    $('.artist-3-overlay-container').on('mouseenter', function() {
+      $('.artist-3-overlay-container').addClass('m-audio-artists-overlay-container-hover');
+      $('.artist-3-copy-wrapper').addClass('m-audio-artists-overlay-copy-wrapper-hover');
+    }).on('mouseleave', function() {
+      $('.m-audio-artists-overlay-container').removeClass('m-audio-artists-overlay-container-hover');
+      $('.m-audio-artists-overlay-copy-wrapper').removeClass('m-audio-artists-overlay-copy-wrapper-hover');
+    });
+
+
+    // Artist #4
+    $('.artist-4-overlay-container').on('mouseenter', function() {
+      $('.artist-4-overlay-container').addClass('m-audio-artists-overlay-container-hover');
+      $('.artist-4-copy-wrapper').addClass('m-audio-artists-overlay-copy-wrapper-hover');
+    }).on('mouseleave', function() {
+      $('.m-audio-artists-overlay-container').removeClass('m-audio-artists-overlay-container-hover');
+      $('.m-audio-artists-overlay-copy-wrapper').removeClass('m-audio-artists-overlay-copy-wrapper-hover');
+    });
+
+    // Artist #5
+    $('.artist-5-overlay-container').on('mouseenter', function() {
+      $('.artist-5-overlay-container').addClass('m-audio-artists-overlay-container-hover');
+      $('.artist-5-copy-wrapper').addClass('m-audio-artists-overlay-copy-wrapper-hover');
+    }).on('mouseleave', function() {
+      $('.m-audio-artists-overlay-container').removeClass('m-audio-artists-overlay-container-hover');
+      $('.m-audio-artists-overlay-copy-wrapper').removeClass('m-audio-artists-overlay-copy-wrapper-hover');
+    });
+
+    // Artist #6
+    $('.artist-6-overlay-container').on('mouseenter', function() {
+      $('.artist-6-overlay-container').addClass('m-audio-artists-overlay-container-hover');
+      $('.artist-6-copy-wrapper').addClass('m-audio-artists-overlay-copy-wrapper-hover');
+    }).on('mouseleave', function() {
+      $('.m-audio-artists-overlay-container').removeClass('m-audio-artists-overlay-container-hover');
+      $('.m-audio-artists-overlay-copy-wrapper').removeClass('m-audio-artists-overlay-copy-wrapper-hover');
+    });
 
 
 
