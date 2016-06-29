@@ -65,6 +65,8 @@
       font-family: $font-secondary;
       font-weight: bold;
       margin: 0;
+      text-transform: uppercase;
+      // padding-bottom: 25px;
     }
 
     .m-audio-artists-copy-gradient {
@@ -76,7 +78,7 @@
     p {
       color: #fff;
       width: 50%;
-      font-size: .8rem;
+      font-size: 1rem;
       margin: 0 auto;
     }
   } /* .m-audio-artists-overlay-copy-wrapper */
