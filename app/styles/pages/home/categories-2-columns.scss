@@ -38,12 +38,14 @@
       top: 0;
       width: 100%;
       text-align: center;
-      background: rgba(164, 185, 196, .7);
+      background: rgba(164, 185, 196, .9);
 
       p {
         color: #fff;
         margin: 0;
         padding: 10px 0;
+        font-weight: bold;
+        letter-spacing: 2px;
       }
     }
 

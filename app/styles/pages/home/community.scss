@@ -6,7 +6,7 @@
 
   section#community {
     background: #54565B;
-    // padding: 200px 0;
+    padding-bottom: 5px;
 
 
     .columns {
@@ -23,9 +23,10 @@
       }
 
       h6 {
-
         color: #CBC8C7;
         letter-spacing: 2px;
+        font-weight: bold;
+
       }
     }
 
@@ -113,7 +114,7 @@
       height: 450px;
       position: absolute;
       top: 0;
-      background: rgba(38, 70, 81, .9);
+      background: #eee;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -125,6 +126,7 @@
         letter-spacing: 10px;
         font-family: $font-secondary;
         margin: 0;
+        color: $m-audio-orange;
       }
     }
 
@@ -145,10 +147,11 @@
         letter-spacing: 10px;
         margin: 0;
         font-weight: 100;
+        font-family: $font-secondary;
       }
 
       .drivers-manuals-divider {
-        width: 50%;
+        width: 40%;
         height: 1px;
         background: $m-audio-orange;
         margin: 20px 0;
