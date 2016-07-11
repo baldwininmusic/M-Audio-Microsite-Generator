@@ -69,45 +69,7 @@ $(function() {
     });
 
 
-// Community Section Scripts (HomePage)
-  //Noblesse Oblige
-  $('.noblesse-oblige-overlay-container').hide();
-  $('.noblesse-oblige-container').on('mouseenter', function() {
-    $('.noblesse-oblige-overlay-container').stop().fadeIn(500);
-  }).on('mouseleave', function() {
-    $('.noblesse-oblige-overlay-container').stop().fadeOut(500);
-  });
-
-  //Code Rebates
-  // $('.code-rebate-overlay-container').hide();
-  $('.code-rebate-container').on('mouseenter', function() {
-    $('.code-rebate-overlay-container').stop().fadeOut(500);
-  }).on('mouseleave', function() {
-    $('.code-rebate-overlay-container').stop().fadeIn(500);
-  });
-
-  //Adara
-  $('.adara-overlay-container').hide();
-  $('.adara-container').on('mouseenter', function() {
-    $('.adara-overlay-container').stop().fadeIn(500);
-  }).on('mouseleave', function() {
-    $('.adara-overlay-container').stop().fadeOut(500);
-  });
-
-  //Neil Davidge
-  // $('.neil-davidge-overlay-container').hide();
-  $('.neil-davidge-container').on('mouseenter', function() {
-    $('.neil-davidge-overlay-container').stop().fadeOut(500);
-  }).on('mouseleave', function() {
-    $('.neil-davidge-overlay-container').stop().fadeIn(500);
-  });
-
-
 // Categories Slideshow
-
-
-
-
   $('.home-page-categories').slick({
   centerMode: true,
   centerPadding: '60px',
@@ -138,6 +100,63 @@ $(function() {
   ]
 });
 
+// Categories Hover SCRIPTS
+  // NEW PRODCUTS
+  $('.cat-container-1').on('mouseenter', function() {
+    $('.new-products-overlay').toggleClass('cat-container-overlay-hover');
+    $('.new-products-header').toggleClass('cat-container-header-hover');
+  }).on('mouseleave', function() {
+    $('.new-products-overlay').toggleClass('cat-container-overlay-hover');
+    $('.new-products-header').toggleClass('cat-container-header-hover');
+  });
+  // USB AUDIO | MIDI INTERFACES
+  $('.cat-container-2').on('mouseenter', function() {
+    $('.usb-midi-overlay').toggleClass('cat-container-overlay-hover');
+    $('.usb-midi-header').toggleClass('cat-container-header-hover');
+  }).on('mouseleave', function() {
+    $('.usb-midi-overlay').toggleClass('cat-container-overlay-hover');
+    $('.usb-midi-header').toggleClass('cat-container-header-hover');
+  });
+  // KEYBOARD CONTROLLERS
+  $('.cat-container-3').on('mouseenter', function() {
+    $('.keyboard-controllers-overlay').toggleClass('cat-container-overlay-hover');
+    $('.keyboard-controllers-header').toggleClass('cat-container-header-hover');
+  }).on('mouseleave', function() {
+    $('.keyboard-controllers-overlay').toggleClass('cat-container-overlay-hover');
+    $('.keyboard-controllers-header').toggleClass('cat-container-header-hover');
+  });
+  // MONITORS | HEADPHONES
+  $('.cat-container-4').on('mouseenter', function() {
+    $('.monitors-headphones-overlay').toggleClass('cat-container-overlay-hover');
+    $('.monitors-headphones-header').toggleClass('cat-container-header-hover');
+  }).on('mouseleave', function() {
+    $('.monitors-headphones-overlay').toggleClass('cat-container-overlay-hover');
+    $('.monitors-headphones-header').toggleClass('cat-container-header-hover');
+  });
+  // MICROPHONES
+  $('.cat-container-5').on('mouseenter', function() {
+    $('.microphones-overlay').toggleClass('cat-container-overlay-hover');
+    $('.microphones-header').toggleClass('cat-container-header-hover');
+  }).on('mouseleave', function() {
+    $('.microphones-overlay').toggleClass('cat-container-overlay-hover');
+    $('.microphones-header').toggleClass('cat-container-header-hover');
+  });
+  // ACCESSORIES
+  $('.cat-container-6').on('mouseenter', function() {
+    $('.accessories-overlay').toggleClass('cat-container-overlay-hover');
+    $('.accessories-header').toggleClass('cat-container-header-hover');
+  }).on('mouseleave', function() {
+    $('.accessories-overlay').toggleClass('cat-container-overlay-hover');
+    $('.accessories-header').toggleClass('cat-container-header-hover');
+  });
+  // LEGACY
+  $('.cat-container-7').on('mouseenter', function() {
+    $('.legacy-overlay').toggleClass('cat-container-overlay-hover');
+    $('.legacy-header').toggleClass('cat-container-header-hover');
+  }).on('mouseleave', function() {
+    $('.legacy-overlay').toggleClass('cat-container-overlay-hover');
+    $('.legacy-header').toggleClass('cat-container-header-hover');
+  });
 
 // PRODUCT PAGE HERO CAROUSEL
   $('.product-carousel').slick({
