@@ -69,27 +69,39 @@ $(function() {
     });
 
 
-  // M-Tracks Hover SCRIPTS
-    $('.hover-content-1').hide();
-    $('.m-track-container-1').on('mouseenter', function() {
-      $('.hover-content-1').stop().fadeIn(400);
-    }).on('mouseleave', function() {
-      $('.hover-content-1').stop().fadeOut(400);
-    });
+// Community Section Scripts (HomePage)
+  //Noblesse Oblige
+  $('.noblesse-oblige-overlay-container').hide();
+  $('.noblesse-oblige-container').on('mouseenter', function() {
+    $('.noblesse-oblige-overlay-container').stop().fadeIn(500);
+  }).on('mouseleave', function() {
+    $('.noblesse-oblige-overlay-container').stop().fadeOut(500);
+  });
 
-    $('.hover-content-2').hide();
-    $('.m-track-container-2').on('mouseenter', function() {
-      $('.hover-content-2').stop().fadeIn(400);
-    }).on('mouseleave', function() {
-      $('.hover-content-2').stop().fadeOut(400);
-    });
+  //Code Rebates
+  // $('.code-rebate-overlay-container').hide();
+  $('.code-rebate-container').on('mouseenter', function() {
+    $('.code-rebate-overlay-container').stop().fadeOut(500);
+  }).on('mouseleave', function() {
+    $('.code-rebate-overlay-container').stop().fadeIn(500);
+  });
 
-    $('.hover-content-3').hide();
-    $('.m-track-container-3').on('mouseenter', function() {
-      $('.hover-content-3').stop().fadeIn(400);
-    }).on('mouseleave', function() {
-      $('.hover-content-3').stop().fadeOut(400);
-    });
+  //Adara
+  $('.adara-overlay-container').hide();
+  $('.adara-container').on('mouseenter', function() {
+    $('.adara-overlay-container').stop().fadeIn(500);
+  }).on('mouseleave', function() {
+    $('.adara-overlay-container').stop().fadeOut(500);
+  });
+
+  //Neil Davidge
+  // $('.neil-davidge-overlay-container').hide();
+  $('.neil-davidge-container').on('mouseenter', function() {
+    $('.neil-davidge-overlay-container').stop().fadeOut(500);
+  }).on('mouseleave', function() {
+    $('.neil-davidge-overlay-container').stop().fadeIn(500);
+  });
+
 
 // Categories Slideshow
 
@@ -99,7 +111,7 @@ $(function() {
   $('.home-page-categories').slick({
   centerMode: true,
   centerPadding: '60px',
-  slidesToShow: 3,
+  slidesToShow: 4,
   arrows: true,
   dots: true,
   responsive: [
