@@ -78,13 +78,23 @@ $(function() {
   dots: true,
   responsive: [
     {
+      breakpoint: 1024,
+      settings: {
+        arrows: true,
+        dots: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 2
+      }
+    },
+    {
       breakpoint: 768,
       settings: {
         arrows: true,
         dots: true,
         centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 3
+        slidesToShow: 2
       }
     },
     {

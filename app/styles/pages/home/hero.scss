@@ -7,3 +7,20 @@ section#hero {
   padding-top: 80px;
   // border: 5px solid red;
 } /* section#hero */
+
+
+/*
+|--------------------------------------------------------------------------
+|                      MEDIUM MEDIA QUERIES
+|                min-width 641px and max-width 1024px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+  section#hero {
+    padding-top: 0px;
+    // border: 5px solid red;
+  } 
+
+}/* MEDIUM MEDIA QUERY */
