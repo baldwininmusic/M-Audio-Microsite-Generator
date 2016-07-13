@@ -5,7 +5,16 @@
 */
 
   section#m-track-2x2M-features {
+    padding-top: 20px;
+  }
 
+  .m-track-2x2M-features-copy-container {
+    padding: 50px 50px 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // border: 5px solid red;
   }
 
   /*
@@ -22,11 +31,22 @@
 
   .m-track-2x2M-features-header {
     color: $m-audio-slate;
+    font-weight: 100;
   }
 
   .feature-callout-blue-text {
     color: $m-audio-slate;
     font-weight: 100;
+    text-align: center;
+    margin: 0;
+  }
+
+  .m-track-2x2M-features-ul {
+    list-style: none;
+
+    li {
+      text-align: center;
+    }
   }
 
 

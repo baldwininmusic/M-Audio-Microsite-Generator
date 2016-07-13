@@ -7,6 +7,7 @@
   {% include "templates/m-track-2x2M/overview.html" %}
   {% include "templates/m-track-2x2M/included-software.html" %}
   {% include "templates/m-track-2x2M/features.html" %}
+  {% include "templates/m-track-2x2M/bottom-banner.html" %}
 
   {% include "templates/_partials/footer.html" %}
 {% endblock %}
