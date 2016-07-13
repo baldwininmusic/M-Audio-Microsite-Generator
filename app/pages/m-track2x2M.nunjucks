@@ -5,7 +5,7 @@
 
   {% include "templates/m-track-2x2M/hero.html" %}
   {% include "templates/m-track-2x2M/overview.html" %}
-  {% include "templates/m-track-2x2M/included-software.html" %}
+  {# include "templates/m-track-2x2M/included-software.html" #}
   {% include "templates/m-track-2x2M/features.html" %}
   {% include "templates/m-track-2x2M/bottom-banner.html" %}
 

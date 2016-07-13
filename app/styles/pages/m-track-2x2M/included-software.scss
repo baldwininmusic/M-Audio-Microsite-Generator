@@ -5,13 +5,14 @@
 */
 
   section#m-track-2x2M-included-software {
+    // border: 5px solid red;
   }
 
   .m-track-2x2M-included-software-container {
-    height: 230px;
+    height: 180px;
     padding: 30px 0;
-    margin: 0 17px;
-    background: rgba(131, 140, 142, 0.7);
+    // margin: 0 17px;
+    // background: rgba(131, 140, 142, 0.7);
     // border: 5px solid blue;
   }
 
@@ -22,6 +23,12 @@
     flex-direction: column;
     border-right: 2px solid #B5C6D1;
   }
+
+  .included-software-row-container-no-border-color {
+    border-right: none;
+  }
+
+
 
   .included-software-divider-line {
     height: 100%;
@@ -59,3 +66,26 @@
     font-weight: 100;
     margin: 0;
   }
+
+
+
+
+
+.included-software-gradient {
+    background-color: rgba(91, 121, 134, 0.5);
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiMzNDUxNWIiIHN0b3Atb3BhY2l0eT0iMC41IiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjODJhMGIwIiBzdG9wLW9wYWNpdHk9IjAuNSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 100%,color-stop(0, rgba(52, 81, 91, 0.5)),color-stop(1, rgba(130, 160, 176, 0.5)));
+    /* Android 2.3 */
+    background-image: -webkit-repeating-linear-gradient(top left,rgba(52, 81, 91, 0.5) 0%,rgba(130, 160, 176, 0.5) 100%);
+    /* IE10+ */
+    background-image: repeating-linear-gradient(to bottom right,rgba(52, 81, 91, 0.5) 0%,rgba(130, 160, 176, 0.5) 100%);
+    background-image: -ms-repeating-linear-gradient(top left,rgba(52, 81, 91, 0.5) 0%,rgba(130, 160, 176, 0.5) 100%);
+}
+
+/* IE8- CSS hack */
+@media \0screen\,screen\9 {
+    .included-software-gradient {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8034515b",endColorstr="#8082a0b0",GradientType=0);
+    }
+}
