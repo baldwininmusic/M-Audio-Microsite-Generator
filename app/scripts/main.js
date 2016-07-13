@@ -385,6 +385,13 @@ $(function() {
 |--------------------------------------------------------------------------
 */
 
+$('.ion-play').on('click', function() {
+  $('.noblesse-oblige-reveal').fadeIn(1000);
+});
+$('.reveal-overlay').on('click', function() {
+  $('.noblesse-oblige-reveal').fadeOut(1000);
+});
+
 // Overview Slide Show
   $('.overview-slick-slider-wrapper').slick({
     dots: true,
