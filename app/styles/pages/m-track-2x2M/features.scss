@@ -1,0 +1,59 @@
+/*
+|--------------------------------------------------------------------------
+|                                 Features
+|--------------------------------------------------------------------------
+*/
+
+  section#m-track-2x2M-features {
+
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  |                      Left Column Features Copy
+  |--------------------------------------------------------------------------
+  */
+
+  .m-track-2x2M-features-header-accent-color {
+    width: 100px;
+    height: 2px;
+    background: #F7F9FA;
+  }
+
+  .m-track-2x2M-features-header {
+    color: $m-audio-slate;
+  }
+
+  .feature-callout-blue-text {
+    color: $m-audio-slate;
+    font-weight: 100;
+  }
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                       Right Column Features Slideshow photos etc
+|--------------------------------------------------------------------------
+*/
+
+  .features-bottom-photos-column {
+    padding: 0;
+    // border: 5px solid red;
+  }
+
+  .features-bottom-photos-wrapper {
+    // margin-right: 10px;
+  }
+
+  .photo-wrapper-1 {
+    // padding-right: 10px;
+    margin-left: 20px;
+    // margin-right: 10px;
+  }
+  .photo-wrapper-2 {
+    margin-left: 40px;
+    margin-right: -20px;
+  }

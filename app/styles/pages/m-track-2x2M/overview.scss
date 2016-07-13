@@ -1,0 +1,48 @@
+/*
+|--------------------------------------------------------------------------
+|                                 Overview
+|--------------------------------------------------------------------------
+*/
+
+  section#m-track-2x2M-overview {
+    
+  }
+
+  .m-track-2x2M-overview-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../images/microsite/m-track2x2M/m-track-angle.jpg');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: -50% 0%;
+    // border: 5px solid red;
+  }
+
+  .m-track-2x2M-overview-copy-container {
+    padding: 50px 100px;
+    background: url('../images/microsite/m-track2x2M/overview-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    // border: 5px solid purple;
+  }
+
+  .slick-slide-container {
+
+    p {
+      color: #fff;
+    }
+  }
+
+  .m-track-2x2M-overview-header-color-accent-line {
+    width: 200px;
+    height: 2px;
+    margin: 0 auto;
+    background: #fff;
+  }
+
+  .m-track-2x2M-overview-header {
+    text-align: center;
+    font-weight: 100;
+    margin: 0;
+  }

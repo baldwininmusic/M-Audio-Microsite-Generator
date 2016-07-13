@@ -379,7 +379,30 @@ $(function() {
     });
 
 
+/*
+|--------------------------------------------------------------------------
+|                   M-Track 2X2M Microsite/Product Page
+|--------------------------------------------------------------------------
+*/
 
+// Overview Slide Show
+  $('.overview-slick-slider-wrapper').slick({
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    fade: true,
+    cssEase: 'linear'
+  });
 
+// Features Slide Show
+  $('.features-slick-slider-wrapper').slick({
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    fade: true,
+    //autoplay: true,
+    //autoplaySpeed: 4000,
+    cssEase: 'linear'
+  });
 
 }); // CLOSING OF $(function() {
