@@ -66,10 +66,14 @@
 
   .noblesse-oblige-left-photo-container {
 
+    img {
+      width: 80%;
+    }
   }
 
   .noblesse-oblige-bold-text-callout-container {
-    padding: 0px 100px;
+    margin-left: -100px;
+    padding-right: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +82,8 @@
 
   .noblesse-oblige-bold-text-callout {
     font-weight: 700;
+    margin: 0;
+    line-height: 1;
   }
 
 
@@ -99,6 +105,17 @@
 
     p {
       padding: 20px 0;
+    }
+  }
+
+  .noblesse-oblige-black-copy {
+    background: black;
+    padding-left: 20px;
+
+    p {
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.5rem;
     }
   }
 
