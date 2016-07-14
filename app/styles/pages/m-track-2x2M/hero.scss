@@ -51,3 +51,24 @@ section#m-track-2x2M-hero {
   height: 100vh;
   background: rgba(0,0,0, 0.9);
 }
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      MEDIUM MEDIA QUERIES
+|                min-width 641px and max-width 1024px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+  section#m-track-2x2M-hero {
+    padding: 0;
+  }
+
+}/* MEDIUM MEDIA QUERY */

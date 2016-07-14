@@ -22,3 +22,27 @@ section#m-track-2x2M-included-quote-strip {
     color: #8A8A8A;
   }
 }
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      MEDIUM MEDIA QUERIES
+|                min-width 641px and max-width 1024px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+  .m-track-2x2M-included-quote-strip-container {
+    height: 150px;
+  }
+
+  .m-track-2x2M-included-quote-strip-container span {
+    font-size: 2.5rem;
+  }
+
+}/* MEDIUM MEDIA QUERY */

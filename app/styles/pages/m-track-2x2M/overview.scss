@@ -54,3 +54,52 @@
     font-weight: 100;
     margin: 0;
   }
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      LARGE MEDIA QUERIES
+|                min-width 1025px and max-width 1440px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+
+  .m-track-2x2M-overview-copy-container {
+    padding: 25px 50px;
+  }
+
+  .slick-slide-container {
+
+    p {
+      // font-size: calc(8px + 9 * ( (100vw - 420px) / 860));
+    }
+  }
+
+}/* LARGE MEDIA QUERY */
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      MEDIUM MEDIA QUERIES
+|                min-width 641px and max-width 1024px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+  .m-track-2x2M-overview-container {
+    height: 50vh;
+  }
+
+}/* MEDIUM MEDIA QUERY */
