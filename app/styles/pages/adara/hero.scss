@@ -1,0 +1,98 @@
+/*
+|--------------------------------------------------------------------------
+|                              Hero
+|--------------------------------------------------------------------------
+*/
+
+  section#adara-hero {
+    padding-top: 80px;
+
+    .adara-hero-image-container {
+      border-bottom: 5px solid black;
+
+      img {
+        padding-bottom: 5px;
+      }
+    }
+  }
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                                 Header
+|--------------------------------------------------------------------------
+*/
+
+  section#adara-header {
+    padding-top: 50px;
+
+    a {
+      color: black;
+    }
+  }
+
+  .adara-header-text {
+    // text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+    // border: 5px solid red;
+  }
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                                 Sound Cloud
+|--------------------------------------------------------------------------
+*/
+
+  section#adara-soundcloud {
+    padding-top: 50px;
+  }
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                                 Copy
+|--------------------------------------------------------------------------
+*/
+
+  section#adara-copy {
+    padding-top: 50px;
+
+    a {
+      color: black;
+    }
+  }
+
+  .adara-artist-page-video-container {
+    // width: 50%;
+  }
+
+  .adara-ul {
+    margin: 0;
+    padding: 20px 0;
+
+    li {
+      display: inline-block;
+      padding-right: 10px;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
