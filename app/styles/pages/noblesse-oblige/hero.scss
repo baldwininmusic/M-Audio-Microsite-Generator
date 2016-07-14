@@ -1,0 +1,121 @@
+/*
+|--------------------------------------------------------------------------
+|                                 Hero
+|--------------------------------------------------------------------------
+*/
+
+  section#noblesse-oblige-hero {
+    padding-top: 80px;
+
+    .columns {
+      padding: 0;
+    }
+
+    .sebastian-hero-img {
+      padding-right: 2px;
+    }
+
+    .valerie-hero-img {
+      padding-left: 2px;
+    }
+  }
+
+  .noblesse-oblige-photo-credit {
+    color: #ccc;
+    font-size: .8rem;
+  }
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                                 Header / Intro Text
+|--------------------------------------------------------------------------
+*/
+
+  section#noblesse-oblige-header {
+
+    a {
+      color: black;
+    }
+  }
+
+  .noblesse-oblige-header-text {
+    // text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+    // border: 5px solid red;
+  }
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                     2 column photo left text right
+|--------------------------------------------------------------------------
+*/
+
+  section#noblesse-oblige-photo-text-columns {
+
+  }
+
+  .noblesse-oblige-left-photo-container {
+
+  }
+
+  .noblesse-oblige-bold-text-callout-container {
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 5px solid red;
+  }
+
+  .noblesse-oblige-bold-text-callout {
+    font-weight: 700;
+  }
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                            Video & Links
+|--------------------------------------------------------------------------
+*/
+
+  section#noblesse-oblige-video-links {
+    padding-top: 40px;
+
+    a {
+      color: black;
+    }
+
+    p {
+      padding: 20px 0;
+    }
+  }
+
+  .noblesse-oblige-ul {
+    margin: 0;
+    padding: 20px;
+
+    li {
+      display: inline-block;
+      padding-right: 10px;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
