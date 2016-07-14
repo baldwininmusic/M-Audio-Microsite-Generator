@@ -21,6 +21,27 @@ section#hero {
   section#hero {
     padding-top: 0px;
     // border: 5px solid red;
-  } 
+  }
 
 }/* MEDIUM MEDIA QUERY */
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      SMALL MEDIA QUERIES
+|                       max-width 640px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 40em) {
+
+  section#hero {
+    padding-top: 0px;
+  }
+
+}/* SMALL MEDIA QUERY */

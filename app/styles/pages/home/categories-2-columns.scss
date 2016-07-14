@@ -105,3 +105,43 @@
 
 
   } /* section#categories */
+
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      SMALL MEDIA QUERIES
+|                       max-width 640px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 40em) {
+
+  .slick-prev {
+    z-index: 999;
+    left: 0;
+    // border: 3px solid red;
+  }
+
+  .slick-next {
+    right: 10px !important;
+    // border: 3px solid red;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: #fff;
+    font-size: 30px !important;
+  }
+
+
+  section#categories .cat-container-header p {
+    font-size: calc(12px + 9 * ( (100vw - 420px) / 860));
+  }
+
+}/* SMALL MEDIA QUERY */

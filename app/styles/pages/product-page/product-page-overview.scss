@@ -30,3 +30,37 @@
       }
     }
   } /* section#product-page-overview */
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      SMALL MEDIA QUERIES
+|                       max-width 640px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 40em) {
+
+  nav#product-page-nav .product-page-nav-container ul li {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .product-overview,
+  .product-features,
+  .product-media {
+    text-align: center;
+  }
+
+  nav#product-page-nav .product-overview,
+  nav#product-page-nav .product-features,
+  nav#product-page-nav .product-media {
+    padding: 0;
+  }
+
+}/* SMALL MEDIA QUERY */

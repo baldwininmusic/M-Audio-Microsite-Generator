@@ -103,3 +103,39 @@
   }
 
 }/* MEDIUM MEDIA QUERY */
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      SMALL MEDIA QUERIES
+|                       max-width 640px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 40em) {
+
+  .m-track-2x2M-overview-copy-container {
+    padding: 10px;
+  }
+
+  .slick-slide-container {
+
+    .m-track-2x2M-overview-header {
+      font-size: calc(24px + 9 * ( (100vw - 420px) / 860));
+    }
+
+    p {
+      font-size: calc(14px + 9 * ( (100vw - 420px) / 860));
+    }
+
+    strong {
+      font-size: calc(16px + 9 * ( (100vw - 420px) / 860));
+    }
+  }
+
+}/* SMALL MEDIA QUERY */

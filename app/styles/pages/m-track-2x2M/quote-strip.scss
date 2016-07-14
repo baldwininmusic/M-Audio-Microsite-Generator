@@ -46,3 +46,29 @@ section#m-track-2x2M-included-quote-strip {
   }
 
 }/* MEDIUM MEDIA QUERY */
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      SMALL MEDIA QUERIES
+|                       max-width 640px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 40em) {
+
+  .m-track-2x2M-included-quote-strip-container {
+    height: 80px;
+  }
+
+  .m-track-2x2M-included-quote-strip-container span {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+}/* SMALL MEDIA QUERY */

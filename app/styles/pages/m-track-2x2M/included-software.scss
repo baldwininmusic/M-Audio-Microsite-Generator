@@ -140,3 +140,29 @@
   }
 
 }/* MEDIUM MEDIA QUERY */
+
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      SMALL MEDIA QUERIES
+|                       max-width 640px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 40em) {
+
+  .included-software-copy {
+    text-align: center;
+  }
+
+  .m-track-2x2M-included-software-container {
+    height: 135vh;;
+  }
+
+}/* SMALL MEDIA QUERY */

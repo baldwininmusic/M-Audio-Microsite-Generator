@@ -63,3 +63,59 @@
       }
     }
   } /* section#product-page-overview */
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      MEDIUM MEDIA QUERIES
+|                min-width 641px and max-width 1024px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+  section#product-page-features .product-page-features-container {
+    padding: 5%;
+  }
+
+  .product-page-requirements-container,
+  .product-page-specs-container {
+    padding: 3% 5%;
+  }
+
+}/* MEDIUM MEDIA QUERY */
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      SMALL MEDIA QUERIES
+|                       max-width 640px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 40em) {
+
+  section#product-page-features .product-page-features-container h4,
+  section#product-page-features .product-page-specs-container h4,
+  section#product-page-features .product-page-requirements-container h4 {
+    font-size: calc(22px + 9 * ( (100vw - 420px) / 860));
+    margin: 0;
+  }
+
+  section#product-page-features .product-page-features-container li,
+  section#product-page-features .product-page-specs-container li,
+  section#product-page-features .product-page-requirements-container li {
+    font-size: calc(14px + 9 * ( (100vw - 420px) / 860));
+  }
+
+}/* SMALL MEDIA QUERY */
