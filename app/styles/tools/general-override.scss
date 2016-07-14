@@ -2,7 +2,7 @@
             GENERAL & OVERRIDES
 ******************************************************************************/
 
-  
+
 
   body {
     font-family: $font-primary;
@@ -93,4 +93,35 @@
 .hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
   -webkit-transform: translateY(0);
   transform: translateY(0);
+}
+
+/*
+|--------------------------------------------------------------------------
+|                   Artist Page Social Sharing Buttons
+|--------------------------------------------------------------------------
+*/
+
+.jssocials-share-link {
+  border-radius: 50%;
+  color: #787878 !important;
+  border: 1px solid #787878;
+
+  &:hover {
+    color: #fff !important;
+  }
+}
+
+.jssocials-shares a {
+  color: #fff;
+}
+
+.jssocials-share-facebook .jssocials-share-link,
+.jssocials-share-twitter .jssocials-share-link {
+  background: #fff !important;
+  // transition: all 0.5s;
+
+  &:hover {
+    background: #787878 !important;
+    // transition: all 0.5s;
+  }
 }

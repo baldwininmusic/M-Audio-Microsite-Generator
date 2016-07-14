@@ -6,6 +6,7 @@
 
   section#noblesse-oblige-hero {
     padding-top: 80px;
+    padding-bottom: 30px;
 
     .columns {
       padding: 0;
@@ -23,6 +24,7 @@
   .noblesse-oblige-photo-credit {
     color: #ccc;
     font-size: .8rem;
+    padding-left: 10px;
   }
 
 
@@ -42,13 +44,20 @@
     a {
       color: black;
     }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  #share {
+    padding-bottom: 30px;
   }
 
   .noblesse-oblige-header-text {
     // text-align: center;
     font-weight: 700;
     text-decoration: underline;
-    // border: 5px solid red;
   }
 
 
@@ -62,7 +71,7 @@
 */
 
   section#noblesse-oblige-photo-text-columns {
-
+    padding-top: 20px;
   }
 
   .noblesse-oblige-left-photo-container {
@@ -122,7 +131,7 @@
 
   .noblesse-oblige-ul {
     margin: 0;
-    padding: 20px;
+    padding: 20px 0;
 
     li {
       display: inline-block;

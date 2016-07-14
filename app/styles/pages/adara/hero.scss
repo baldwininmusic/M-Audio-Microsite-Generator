@@ -32,10 +32,18 @@
     a {
       color: black;
     }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  #share {
+    padding-bottom: 30px;
   }
 
   .adara-header-text {
-    // text-align: center;
+    margin: 0;
     font-weight: 700;
     text-decoration: underline;
     // border: 5px solid red;
@@ -72,6 +80,10 @@
 
     a {
       color: black;
+    }
+
+    p {
+      font-size: 1.2rem;
     }
   }
 

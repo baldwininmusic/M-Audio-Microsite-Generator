@@ -412,4 +412,18 @@ $('.reveal-overlay').on('click', function() {
     cssEase: 'linear'
   });
 
+
+
+/*
+|--------------------------------------------------------------------------
+|                     Artists Page Social Sharing
+|--------------------------------------------------------------------------
+*/
+
+  $("#share").jsSocials({
+    showLabel: false,
+    showCount: true,
+    shares: ["facebook", "twitter"]
+  });
+
 }); // CLOSING OF $(function() {
