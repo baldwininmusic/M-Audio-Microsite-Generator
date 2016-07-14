@@ -1,30 +1,316 @@
 /*
 |--------------------------------------------------------------------------
-|                                 ARTISTS PAGE
+|                                 Artists Kristin
 |--------------------------------------------------------------------------
 */
 
-  section#artists-page {
-    margin-top: 80px;
+  section#artists-kristin {
+    padding-top: 80px;
+    background: $m-audio-gray;
 
     .columns {
       padding: 0;
     }
+  }
 
-    .artists-page-image-container {
-      // height: 400vh;
-      background: url('../images/artists/4.jpg');
-      background-repeat: no-repeat;
-      background-size: auto 100vh;
-      background-position: left;
-      background-attachment: fixed;
-      // border: 5px solid green;
-    }
+  .m-audio-artists-gradient {
+    height: 6px;
+    width: 50%;
+    margin: 0 auto;
+  }
 
-    .artists-page-copy-container {
-      // height: 400vh;
-      padding: 0 5%;
-      background: #F6F6F6;
-      // border: 5px solid red;
+  header.m-audio-artists {
+    text-align: center;
+    // border-top: 10px solid #ADC0CA;
+    // width: 50%;
+    // margin: 0 auto;
+
+    h6 {
+      padding-top: 10px;
+      padding-bottom: 40px;
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 5px;
     }
   }
+
+  .m-audio-artists-artist-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .m-audio-artists-overlay-container {
+    position: absolute;
+    background: darken(rgba(85, 97, 107, 0.8), 5%);
+    // background: black;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: background .5s;
+    // border: 5px solid red;
+  }
+
+  .m-audio-artists-overlay-copy-wrapper {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    transition: all .5s ease-in-out;
+    transform: translateY(68%);
+    // border: 5px solid red;
+
+    h5 {
+      color: #fff;
+      font-family: $font-secondary;
+      font-weight: bold;
+      margin: 0;
+      text-transform: uppercase;
+      // padding-bottom: 25px;
+    }
+
+    .m-audio-artists-copy-gradient {
+      height: 2px;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    p {
+      color: #fff;
+      width: 50%;
+      font-size: 1rem;
+      margin: 0 auto;
+    }
+  } /* .m-audio-artists-overlay-copy-wrapper */
+
+  .m-audio-artists-overlay-container-hover {
+    background: transparent;
+    transition: background .5s;
+  }
+
+  .m-audio-artists-overlay-copy-wrapper-hover {
+    transition: all .5s ease-out;
+    transform: translateY(0%);
+    background: rgba(85, 97, 107, 0.8);
+  }
+
+  /* Artist #2 */
+  .artist-2-overlay-container {
+    background: darken(rgba(85, 97, 107, 0.8), 20%);
+  }
+  .artist-2-overlay-container-hover {
+    background: transparent;
+    transition: background .5s;
+  }
+
+  /* Artist #3 */
+  .artist-3-overlay-container {
+    background: lighten(rgba(85, 97, 107, 0.8), 40%);
+  }
+  .artist-3-overlay-container-hover {
+    background: transparent;
+    transition: background .5s;
+  }
+
+  /* Artist #4 */
+  .artist-4-overlay-container {
+    background: lighten(rgba(85, 97, 107, 0.8), 40%);
+  }
+  .artist-4-overlay-container-hover {
+    background: transparent;
+    transition: background .5s;
+  }
+
+  /* Artist #5 */
+  .artist-5-overlay-container {
+    background: darken(rgba(85, 97, 107, 0.8), 5%);
+  }
+  .artist-5-overlay-container-hover {
+    background: transparent;
+    transition: background .5s;
+  }
+
+  /* Artist #6 */
+  .artist-6-overlay-container {
+    background: darken(rgba(85, 97, 107, 0.8), 20%);
+  }
+  .artist-6-overlay-container-hover {
+    background: transparent;
+    transition: background .5s;
+  }
+
+
+
+
+
+.artists-gradient {
+    background-color: #92a4ae;
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjYzFjZWQ3IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM4MzlmYWUiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjUiLz48c3RvcCBzdG9wLWNvbG9yPSIjODA4Mjg1IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN2c2dnKSIgLz48L3N2Zz4=);
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 0%,color-stop(0, rgb(193, 206, 215)),color-stop(0.5, rgb(131, 159, 174)),color-stop(1, rgb(128, 130, 133)));
+    /* Android 2.3 */
+    background-image: -webkit-repeating-linear-gradient(left,rgb(193, 206, 215) 0%,rgb(131, 159, 174) 50%,rgb(128, 130, 133) 100%);
+    /* IE10+ */
+    background-image: repeating-linear-gradient(to right,rgb(193, 206, 215) 0%,rgb(131, 159, 174) 50%,rgb(128, 130, 133) 100%);
+    background-image: -ms-repeating-linear-gradient(left,rgb(193, 206, 215) 0%,rgb(131, 159, 174) 50%,rgb(128, 130, 133) 100%);
+}
+
+/* IE8- CSS hack */
+@media \0screen\,screen\9 {
+    .artists-gradient {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc1ced7",endColorstr="#ff808285",GradientType=1);
+    }
+}
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      LARGE MEDIA QUERIES
+|                min-width 1025px and max-width 1440px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+
+  .m-audio-artists-overlay-copy-wrapper {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 13%;
+    transition: all .5s ease-in-out;
+    transform: translateY(68%);
+    // border: 5px solid red;
+  }
+
+  .m-audio-artists-overlay-container-hover {
+    background: transparent;
+    transition: background .5s;
+  }
+
+  .m-audio-artists-overlay-copy-wrapper-hover {
+    transition: all .5s ease-out;
+    transform: translateY(0%);
+    background: rgba(85, 97, 107, 0.8);
+  }
+
+  /* Artist #2 */
+  .artist-2-overlay-container {
+    background: darken(rgba(85, 97, 107, 0.8), 20%);
+  }
+  .artist-2-overlay-container-hover {
+    background: transparent;
+    transition: background .5s;
+  }
+
+}/* LARGE MEDIA QUERY */
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      MEDIUM MEDIA QUERIES
+|                min-width 641px and max-width 1024px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+  .m-audio-artists-overlay-copy-wrapper {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 13%;
+    transition: all .5s ease-in-out;
+    transform: translateY(68%);
+    // border: 5px solid red;
+  }
+
+  .m-audio-artists-overlay-container-hover {
+    background: transparent;
+    transition: background .5s;
+  }
+
+  .m-audio-artists-overlay-copy-wrapper-hover {
+    transition: all .5s ease-out;
+    transform: translateY(0%);
+    background: rgba(85, 97, 107, 0.8);
+  }
+
+  /* Artist #2 */
+  .artist-2-overlay-container {
+    background: darken(rgba(85, 97, 107, 0.8), 20%);
+  }
+  .artist-2-overlay-container-hover {
+    background: transparent;
+    transition: background .5s;
+  }
+
+}/* MEDIUM MEDIA QUERY */
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      SMALL MEDIA QUERIES
+|                       max-width 640px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 40em) {
+
+  section#artists-kristin {
+    padding-top: 0;
+  }
+
+  .m-audio-artists-overlay-copy-wrapper {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    transition: all .5s ease-in-out;
+    transform: translateY(68%);
+    // border: 5px solid red;
+  }
+
+  .m-audio-artists-overlay-copy-wrapper p {
+    width: 100%;
+    font-size: calc(16px + 9 * ( (100vw - 420px) / 860));
+  }
+
+  .m-audio-artists-overlay-container-hover {
+    background: transparent;
+    transition: background .5s;
+  }
+
+  .m-audio-artists-overlay-copy-wrapper-hover {
+    transition: all .5s ease-out;
+    transform: translateY(0%);
+    background: rgba(85, 97, 107, 0.8);
+  }
+
+  /* Artist #2 */
+  .artist-2-overlay-container {
+    background: darken(rgba(85, 97, 107, 0.8), 20%);
+  }
+  .artist-2-overlay-container-hover {
+    background: transparent;
+    transition: background .5s;
+  }
+
+}/* SMALL MEDIA QUERY */
