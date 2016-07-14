@@ -420,10 +420,10 @@ $('.reveal-overlay').on('click', function() {
 |--------------------------------------------------------------------------
 */
 
-  $("#share").jsSocials({
+  $('#share').jsSocials({
     showLabel: false,
     showCount: true,
-    shares: ["facebook", "twitter"]
+    shares: ['facebook', 'twitter']
   });
 
 }); // CLOSING OF $(function() {
