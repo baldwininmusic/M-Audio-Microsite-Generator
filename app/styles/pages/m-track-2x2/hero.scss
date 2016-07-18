@@ -5,7 +5,7 @@
 */
 
 section#m-track-2x2-hero {
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 .m-track-2x2-hero-container {
@@ -26,7 +26,7 @@ section#m-track-2x2-hero {
 
 .m-track-2x2-hero-conner-logo {
   width: 50%;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .m-track-2x2-hero-play-btn {
@@ -57,6 +57,23 @@ section#m-track-2x2-hero {
 
 
 
+/*
+|--------------------------------------------------------------------------
+|                      LARGE MEDIA QUERIES
+|                min-width 1025px and max-width 1440px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+
+  section#m-track-2x2-hero {
+    padding-top: 20px;
+  }
+
+}/* LARGE MEDIA QUERY */
+
+
+
 
 
 /*
@@ -69,7 +86,7 @@ section#m-track-2x2-hero {
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
   section#m-track-2x2-hero {
-    padding: 0;
+    padding: 0px;
   }
 
 }/* MEDIUM MEDIA QUERY */

@@ -1,0 +1,74 @@
+/*
+|--------------------------------------------------------------------------
+|                                 Quote Strip
+|--------------------------------------------------------------------------
+*/
+
+section#m-track-2x2-included-quote-strip {
+
+}
+
+.m-track-2x2-included-quote-strip-container {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 5px solid red;
+
+  span {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    font-weight: 100;
+    color: #8A8A8A;
+  }
+}
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      MEDIUM MEDIA QUERIES
+|                min-width 641px and max-width 1024px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+  .m-track-2x2-included-quote-strip-container {
+    height: 150px;
+  }
+
+  .m-track-2x2-included-quote-strip-container span {
+    font-size: 2.5rem;
+  }
+
+}/* MEDIUM MEDIA QUERY */
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      SMALL MEDIA QUERIES
+|                       max-width 640px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 40em) {
+
+  .m-track-2x2-included-quote-strip-container {
+    height: 80px;
+  }
+
+  .m-track-2x2-included-quote-strip-container span {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+}/* SMALL MEDIA QUERY */

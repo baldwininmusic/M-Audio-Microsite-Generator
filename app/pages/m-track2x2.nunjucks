@@ -3,10 +3,10 @@
 {% block content %}
   {% include "templates/_partials/navigation-jet.html" %}
 
-  {% include "templates/m-track-2x2/hero.html" %}
-  {% include "templates/m-track-2x2/quote-strip.html" %}
   {% include "templates/m-track-2x2/overview.html" %}
+  {% include "templates/m-track-2x2/quote-strip.html" %}
   {% include "templates/m-track-2x2/features.html" %}
+  {% include "templates/m-track-2x2/hero.html" %}
   {% include "templates/m-track-2x2/bottom-banner.html" %}
 
   {% include "templates/_partials/footer.html" %}

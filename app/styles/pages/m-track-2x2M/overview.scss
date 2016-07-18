@@ -29,6 +29,13 @@
     // border: 5px solid red;
   }
 
+  .m-track-2x2M-overview-logo-container {
+    width: 400px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    // border: 5px solid red;
+  }
+
   .m-track-2x2M-overview-copy-container {
     padding: 50px 100px;
     background: url('../images/microsite/m-track2x2M/overview-bg.png');
@@ -41,6 +48,24 @@
 
     p {
       color: #fff;
+    }
+  }
+
+  .m-track-2x2M-dealer-btn-container {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .m-track-2x2M-dealer-btn {
+    font-family: $font-secondary;
+    background: rgba(245, 245, 245, .3);
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: center;
+
+    a {
+      color: #444;
+      text-transform: uppercase;
     }
   }
 
@@ -71,6 +96,13 @@
 */
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+
+  .m-track-2x2M-overview-logo-container {
+    width: 400px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    // border: 5px solid red;
+  }
 
   .m-track-2x2M-overview-copy-container {
     padding: 25px 50px;
