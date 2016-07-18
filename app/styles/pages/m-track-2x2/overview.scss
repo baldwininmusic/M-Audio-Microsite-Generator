@@ -1,0 +1,141 @@
+/*
+|--------------------------------------------------------------------------
+|                                 Overview
+|--------------------------------------------------------------------------
+*/
+
+  section#m-track-2x2-overview {
+    margin: 0 17px;
+    background: url('../images/microsite/m-track2x2M/m-track-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .columns {
+      padding: 0;
+    }
+  }
+
+  .m-track-2x2-overview-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    // background: url('../images/microsite/m-track2x2M/m-track-bg.png');
+    // background-size: 70%;
+    // background-repeat: no-repeat;
+    // background-position: -50% 0%;
+    // border: 5px solid red;
+  }
+
+  .m-track-2x2-overview-copy-container {
+    padding: 50px 100px;
+    background: url('../images/microsite/m-track2x2M/overview-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    // border: 5px solid purple;
+  }
+
+  .slick-slide-container {
+
+    p {
+      color: #fff;
+    }
+  }
+
+  .m-track-2x2-overview-header-color-accent-line {
+    width: 200px;
+    height: 2px;
+    margin: 0 auto;
+    background: #fff;
+  }
+
+  .m-track-2x2-overview-header {
+    text-align: center;
+    font-weight: 100;
+    margin: 0;
+  }
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      LARGE MEDIA QUERIES
+|                min-width 1025px and max-width 1440px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+
+  .m-track-2x2-overview-copy-container {
+    padding: 25px 50px;
+  }
+
+  .slick-slide-container {
+
+    p {
+      // font-size: calc(8px + 9 * ( (100vw - 420px) / 860));
+    }
+  }
+
+}/* LARGE MEDIA QUERY */
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      MEDIUM MEDIA QUERIES
+|                min-width 641px and max-width 1024px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+  .m-track-2x2-overview-container {
+    height: 50vh;
+  }
+
+}/* MEDIUM MEDIA QUERY */
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      SMALL MEDIA QUERIES
+|                       max-width 640px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 40em) {
+
+  .m-track-2x2-overview-copy-container {
+    padding: 10px;
+  }
+
+  .slick-slide-container {
+
+    .m-track-2x2-overview-header {
+      font-size: calc(24px + 9 * ( (100vw - 420px) / 860));
+    }
+
+    p {
+      font-size: calc(14px + 9 * ( (100vw - 420px) / 860));
+    }
+
+    strong {
+      font-size: calc(16px + 9 * ( (100vw - 420px) / 860));
+    }
+  }
+
+}/* SMALL MEDIA QUERY */

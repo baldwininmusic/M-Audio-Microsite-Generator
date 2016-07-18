@@ -1,0 +1,213 @@
+/*
+|--------------------------------------------------------------------------
+|                                 Features
+|--------------------------------------------------------------------------
+*/
+
+  section#m-track-2x2-features {
+    padding-top: 20px;
+  }
+
+  .m-track-2x2-features-copy-container {
+    padding: 50px 50px 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // border: 5px solid red;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  |                      Left Column Features Copy
+  |--------------------------------------------------------------------------
+  */
+
+  .m-track-2x2-features-header-accent-color {
+    width: 100px;
+    height: 2px;
+    background: #F7F9FA;
+  }
+
+  .m-track-2x2-features-header {
+    color: $m-audio-slate;
+    font-weight: 100;
+  }
+
+  .feature-callout-blue-text {
+    color: $m-audio-slate;
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+  }
+
+  .m-track-2x2-features-ul {
+    list-style: none;
+
+    li {
+      text-align: center;
+    }
+  }
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                       Right Column Features Slideshow photos etc
+|--------------------------------------------------------------------------
+*/
+
+  .features-bottom-photos-column {
+    padding: 0;
+    // border: 5px solid red;
+  }
+
+  .features-bottom-photos-wrapper {
+    // margin-right: 10px;
+  }
+
+  .photo-wrapper-1 {
+    // padding-right: 10px;
+    margin-left: 20px;
+    // margin-right: 10px;
+  }
+  .photo-wrapper-2 {
+    margin-left: 40px;
+    margin-right: -20px;
+  }
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      LARGE MEDIA QUERIES
+|                min-width 1025px and max-width 1440px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+
+  .m-track-2x2-features-header {
+    margin: 0;
+  }
+
+  .m-track-2x2-features-copy-container {
+    padding: 15px 15px 0px 15px;
+
+    .feature-callout-blue-text {
+      font-size: calc(12px + 6 * ( (100vw - 420px) / 860));
+    }
+
+    p {
+      font-size: calc(12px + 2 * ( (100vw - 420px) / 860));
+    }
+  }
+
+  .m-track-2x2-features-ul {
+
+    li {
+      font-size: calc(12px + 2 * ( (100vw - 420px) / 860));
+    }
+  }
+
+}/* LARGE MEDIA QUERY */
+
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      MEDIUM MEDIA QUERIES
+|                min-width 641px and max-width 1024px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+  section#m-track-2x2-features {
+
+    .row {
+      margin: 0;
+    }
+  }
+
+  .photo-wrapper-1 {
+    margin-left: 0px;
+    padding-bottom: 20px;
+  }
+  .photo-wrapper-2 {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 20px;
+  }
+
+}/* MEDIUM MEDIA QUERY */
+
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      SMALL MEDIA QUERIES
+|                       max-width 640px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 40em) {
+
+  section#m-track-2x2-features {
+
+    .row {
+      margin: 0;
+    }
+  }
+
+  .photo-wrapper-1 {
+    margin-left: 0px;
+    padding-bottom: 20px;
+  }
+  .photo-wrapper-2 {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 20px;
+  }
+
+  .m-track-2x2-features-header {
+    margin: 0;
+  }
+
+  .m-track-2x2-features-copy-container {
+    padding: 15px 15px 0px 15px;
+
+    .feature-callout-blue-text {
+      font-size: calc(18px + 6 * ( (100vw - 420px) / 860));
+    }
+
+    p {
+      font-size: calc(12px + 2 * ( (100vw - 420px) / 860));
+      text-align: center;
+    }
+  }
+
+  .m-track-2x2-features-ul {
+
+    li {
+      font-size: calc(12px + 2 * ( (100vw - 420px) / 860));
+    }
+  }
+
+}/* SMALL MEDIA QUERY */

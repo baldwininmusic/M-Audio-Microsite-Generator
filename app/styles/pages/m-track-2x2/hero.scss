@@ -1,0 +1,105 @@
+/*
+|--------------------------------------------------------------------------
+|                                 Hero
+|--------------------------------------------------------------------------
+*/
+
+section#m-track-2x2-hero {
+  padding-top: 80px;
+}
+
+.m-track-2x2-hero-container {
+  position: relative;
+}
+
+.m-track-2x2-hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // border: 5px solid red;
+}
+
+.m-track-2x2-hero-noblesse-logo {
+  width: 30%;
+}
+
+.m-track-2x2-hero-play-btn {
+  color: #fff;
+  font-size: 3rem;
+  margin: 20px 0;
+
+  i:hover {
+    cursor: pointer;
+  }
+}
+
+.m-track-2x2-hero-m-track-logo {
+  width: 30%;
+}
+
+.noblesse-oblige-reveal {
+  z-index: 99;
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0, 0.9);
+}
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      MEDIUM MEDIA QUERIES
+|                min-width 641px and max-width 1024px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+  section#m-track-2x2-hero {
+    padding: 0;
+  }
+
+}/* MEDIUM MEDIA QUERY */
+
+
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      SMALL MEDIA QUERIES
+|                       max-width 640px
+|--------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 40em) {
+
+  section#m-track-2x2-hero {
+    padding: 0;
+  }
+
+  .m-track-2x2-hero-noblesse-logo,
+  .m-track-2x2-hero-m-track-logo {
+    width: 50%;
+  }
+
+  .m-track-2x2-hero-play-btn {
+    margin: 5px 0;
+    font-size: 1.5rem;
+  }
+
+}/* SMALL MEDIA QUERY */
