@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+/* TEAM */
+
+    Robert Guss - Developer
+    http://robertguss.com
+    @robertguss
+
+/* THANKS */
+
+    <name>
+
+/* SITE */
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
