@@ -44,12 +44,13 @@
       <!-- Products -->
        <li><a href="#">| <span class="nav-li-span-dropdowns">Products</span></a>
           <ul class="dropdown">
-             <li><a href="#">New Products</a></li>
-             <li><a href="#">USB Audio | Midi Interfaces</a></li>
-             <li><a href="#">Keyboard Controllers</a></li>
-             <li><a href="#">Monitors | Headphones</a></li>
-             <li><a href="#">Microphones</a></li>
-             <li><a href="#">Accessories</a></li>
+             <li><a href="/products/browse/category/new-products">New Products</a></li>
+             <li><a href="/browse/category/usb-audio-and-midi-interfaces">USB Audio | Midi Interfaces</a></li>
+             <li><a href="/browse/category/keyboards-and-controllers">Keyboard Controllers</a></li>
+             <li><a href="/products/browse/category/reference-monitors">Monitors | Headphones</a></li>
+             <li><a href="/products/browse/category/microphones">Microphones</a></li>
+             <li><a href="/products/browse/category/accessories">Accessories</a></li>
+             <li><a href="/products/browse/category/legacy-products">Legacy</a></li>
           </ul>
        </li>
 
@@ -139,10 +140,16 @@
 
 
 <section id="search-bar">
-  <input type="text" class="search-bar-input-field" name="search" placeholder="Search...">
-  <button type="submit" class="search-bar-submit-btn">SEARCH</button>
-  <button class="search-bar-close-btn"><i class="ion-ios-close-outline"></i></button>
+  <!--<input type="text" class="search-bar-input-field" name="search" placeholder="Search...">-->
+  <form method="post" action="/search" data-abide>
+      <input type="text" id="search_keywords" class="search-bar-input-field" name="keywords" placeholder="Search M-Audio" required />
+      <button type="submit" class="search-bar-submit-btn">SEARCH</button>
+      <button class="search-bar-close-btn"><i class="ion-ios-close-outline"></i></button>
+      <!--<small class="error">Search keyword(s) are required</small>-->
+  </form>
 </section>
+
+
 
 
 

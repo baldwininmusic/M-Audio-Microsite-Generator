@@ -23,7 +23,7 @@
 
 .footer-socials-wrapper {
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
   // border: 5px solid red;
 
   ul {
@@ -35,6 +35,21 @@
     color: black;
     padding-right: 5px;
     font-size: 2rem;
+  }
+}
+
+.footer-subscribe-wrapper {
+  text-align: center;
+  padding-bottom: 20px;
+  //border: 5px solid red;
+
+  a {
+    color: #444;
+  }
+
+  .ion-email {
+    font-size: 1.5rem;
+    font-weight: 100;
   }
 }
 
