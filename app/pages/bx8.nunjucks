@@ -1,0 +1,16 @@
+{% extends "layouts/default.nunjucks" %}
+
+{% block content %}
+  {% include "templates/_partials/navigation-jet.html" %}
+
+  {% include "templates/bx8/hero.html" %}
+  {% include "templates/bx8/video-modal.html" %}
+  {% include "templates/bx8/features.html" %}
+  {% include "templates/bx8/tabs.html" %}
+  {% include "templates/bx8/overview.html" %}
+  {% include "templates/bx8/specs.html" %}
+  {% include "templates/bx8/videos-photos.html" %}
+  {% include "templates/bx8/buttons.html" %}
+
+  {% include "templates/_partials/footer.html" %}
+{% endblock %}

@@ -1,0 +1,51 @@
+/*
+|--------------------------------------------------------------------------
+|                                 BX5 Overview
+|--------------------------------------------------------------------------
+*/
+
+section.bx5-overview {
+  background: #54565B;
+  padding: 60px 0;
+
+  ul {
+    list-style: none;
+    text-align: center;
+    color: #AAA9A7;
+  }
+
+  @media screen and (max-width: 39.9375em) {
+    ul {
+      margin: 0;
+      font-size: calc(12px + 9 * ( (100vw - 420px) / 860));
+    }
+  }
+
+  p {
+    color: #AAA9A7;
+  }
+
+  @media screen and (max-width: 39.9375em) {
+    p {
+      font-size: calc(12px + 9 * ( (100vw - 420px) / 860));
+    }
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  section.bx5-overview {
+    padding: 30px 20px;
+  }
+}
+
+.bx5-overview-header {
+  text-align: center;
+  color: #AAA9A7;
+  margin: 0;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .bx5-overview-header {
+    font-size: 1.2em;
+  }
+}
