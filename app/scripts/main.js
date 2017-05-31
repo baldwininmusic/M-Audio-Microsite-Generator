@@ -426,4 +426,53 @@ $('.reveal-overlay').on('click', function() {
     shares: ['facebook', 'twitter']
   });
 
+/*
+|--------------------------------------------------------------------------
+|                                 BX5
+|--------------------------------------------------------------------------
+*/
+
+// Add Brackets on active LINK
+  $('#bx5-overview').on('click', function() {
+    $('.bx5-tabs-left-bracket').hide();
+    $('.bx5-tabs-right-bracket').hide();
+    $('.overview-left-bracket').show();
+    $('.overview-right-bracket').show();
+  });
+  $('#bx5-specs').on('click', function() {
+    $('.bx5-tabs-left-bracket').hide();
+    $('.bx5-tabs-right-bracket').hide();
+    $('.features-left-bracket').show();
+    $('.features-right-bracket').show();
+  });
+  $('#bx5-videos-photos').on('click', function() {
+    $('.bx5-tabs-left-bracket').hide();
+    $('.bx5-tabs-right-bracket').hide();
+    $('.media-left-bracket').show();
+    $('.media-right-bracket').show();
+  });
+
+
+  $('.bx5-specs').hide();
+  $('.bx5-videos-photos').hide();
+
+  $('#bx5-overview').on('click', function(){
+    $('.product-content-jquery').fadeOut('fast');
+    $('.bx5-overview').fadeIn('slow');
+  });
+  $('#bx5-specs').on('click', function(){
+    $('.product-content-jquery').fadeOut('fast');
+    $('.bx5-specs').fadeIn('slow');
+  });
+  $('#bx5-videos-photos').on('click', function(){
+    $('.product-content-jquery').fadeOut('fast');
+    $('.bx5-videos-photos').fadeIn('slow');
+  });
+
+//LIGHT GALLERY
+  $('#bx5-lightgallery').lightGallery({
+    selector: 'a',
+    mode: 'lg-fade'
+  });
+
 }); // CLOSING OF $(function() {

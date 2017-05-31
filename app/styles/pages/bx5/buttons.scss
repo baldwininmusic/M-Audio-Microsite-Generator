@@ -1,0 +1,35 @@
+/*
+|--------------------------------------------------------------------------
+|                                 BX5 Buttons
+|--------------------------------------------------------------------------
+*/
+
+section.bx5-buttons {
+  background: #54565B;
+  padding-bottom: 60px;
+}
+
+.bx5-button-container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bx5-button-text {
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: bold;
+}
+
+.bx5-dealer-btn {
+  background: #BECDD5;
+}
+
+.bx5-buy-btn {
+  background: #7C98AB;
+}
+
+.bx5-support-btn {
+  background: #898B8E;
+}

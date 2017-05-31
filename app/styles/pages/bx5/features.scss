@@ -1,0 +1,73 @@
+/*
+|--------------------------------------------------------------------------
+|                             BX5 Features
+|--------------------------------------------------------------------------
+*/
+
+section.bx5-features {
+  .columns {
+    padding: 0;
+  }
+
+  p {
+    color: #56565A;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (max-width: 63.9375em) {
+    p {
+      padding: 20px;
+    }
+  }
+}
+
+.bx5-features-container {
+  padding: 60px 0 100px;
+  background: url('../images/bx5/features/background.jpg');
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .bx5-features-container {
+    padding: 30px 0 50px;
+  }
+}
+
+.bx5-features-header {
+  text-align: center;
+  margin: 0;
+  color: #56565A;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .bx5-features-header {
+    font-size: 2em !important;
+  }
+}
+
+.bx5-features-img-container {
+  width: 50%;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .bx5-features-img-container {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .bx5-features-img-container {
+    width: 90%;
+  }
+}
+
+.bx5-features-front-img {
+  float: right;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .bx5-features-front-img {
+    float: none;
+  }
+}
