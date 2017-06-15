@@ -1,0 +1,9 @@
+{% extends "layouts/default.nunjucks" %}
+
+{% block content %}
+  {% include "templates/_partials/navigation-jet.html" %}
+
+  {% include "templates/m3-8/hero.html" %}
+
+  {% include "templates/_partials/footer.html" %}
+{% endblock %}
