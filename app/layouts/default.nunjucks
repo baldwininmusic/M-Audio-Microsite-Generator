@@ -75,13 +75,12 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/what-input/what-input.js"></script>
-    <script src="/bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="/bower_components/what-input/dist/what-input.js"></script>
+    <script src="/bower_components/foundation-sites/dist/js/foundation.js"></script>
     <script src="/bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
     <script src="/bower_components/slick-carousel/slick/slick.js"></script>
     <script src="/bower_components/jssocials/dist/jssocials.js"></script>
     <!-- endbower -->
-    <script src="/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script>
     {% include "./premium/premium-js.html" %}
     <!-- endbuild -->
 

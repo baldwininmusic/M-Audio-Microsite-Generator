@@ -1,0 +1,25 @@
+{% extends 'layouts/default.nunjucks' %}
+
+{% block content %}
+  {% include "templates/_partials/navigation-jet.html" %}
+
+  {% include "templates/m-track2x2-vocal-pro/hero-video.html" %}
+
+  {% include "templates/m-track2x2-vocal-pro/main-graphic.html" %}
+
+  {% include "templates/m-track2x2-vocal-pro/excerpt.html" %}
+
+  {% include "templates/m-track2x2-vocal-pro/tabs.html" %}
+
+  {% include "templates/m-track2x2-vocal-pro/overview-tab-content.html" %}
+
+  {% include "templates/m-track2x2-vocal-pro/features-tab-content.html" %}
+
+  {% include "templates/m-track2x2-vocal-pro/specs-tab-content.html" %}
+
+  {% include "templates/m-track2x2-vocal-pro/videos-photos-tab-content.html" %}
+
+  {% include "templates/m-track2x2-vocal-pro/buttons.html" %}
+
+  {% include "templates/_partials/footer.html" %}
+{% endblock %}
